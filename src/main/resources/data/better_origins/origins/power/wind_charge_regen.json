@@ -1,0 +1,16 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 1,
+  "hidden": true,
+  "condition": {
+    "type": "origins:resource",
+    "resource": "better_origins:wind_charges",
+    "comparison": "<",
+    "compare_to": 600
+  },
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "better_origins:wind_charges",
+    "change": 1
+  }
+}

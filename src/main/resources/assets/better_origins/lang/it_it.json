@@ -10,7 +10,7 @@
   "power.better_origins.internal_heat.name": "Calore interno",
   "power.better_origins.internal_heat.description": "Il fuoco dentro di te brucia energia: ti viene fame più in fretta.",
   "power.better_origins.fireball.name": "Palla di fuoco",
-  "power.better_origins.fireball.description": "Lanci una piccola palla di fuoco nella direzione in cui guardi. Ricarica 4 secondi.",
+  "power.better_origins.fireball.description": "Lanci una piccola palla di fuoco nella direzione in cui guardi. Ricarica 3 secondi.",
   "power.better_origins.nether_diet.name": "Dieta del Nether",
   "power.better_origins.nether_diet.description": "Puoi mangiare i funghi cremisi e distorti.",
   "power.better_origins.blazeborn_kin.name": "Parentela del fuoco",
@@ -93,5 +93,7 @@
   "subtitles.better_origins.adrenaline_activate": "Adrenalina scatenata",
   "subtitles.better_origins.adrenaline_rush": "Battito accelerato",
   "subtitles.better_origins.adrenaline_crash": "L'adrenalina svanisce",
-  "item.better_origins.perfect_human_emblem": "Emblema dell'Umano Perfetto"
+  "item.better_origins.perfect_human_emblem": "Emblema dell'Umano Perfetto",
+  "power.better_origins.wind_charge.name": "Carica di vento",
+  "power.better_origins.wind_charge.description": "Lanci una carica di vento della Breeze nella direzione in cui guardi. Ne tieni fino a 3: le lanci una alla volta (ricarica 0,5 secondi); ogni carica usata si ricarica in 10 secondi, una dopo l'altra."
 }

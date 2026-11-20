@@ -1,0 +1,31 @@
+{
+  "type": "origins:fire_projectile",
+  "cooldown": 10,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 1,
+    "order": 7
+  },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "better_origins:wind_charges",
+    "comparison": ">=",
+    "compare_to": 200
+  },
+  "entity_type": "minecraft:breeze_wind_charge",
+  "speed": 1.5,
+  "divergence": 0,
+  "tag": {
+    "acceleration_power": 0.0
+  },
+  "sound": "minecraft:entity.breeze.shoot",
+  "shooter_action": {
+    "type": "origins:change_resource",
+    "resource": "better_origins:wind_charges",
+    "change": -200
+  },
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  }
+}

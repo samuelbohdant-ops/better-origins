@@ -6,6 +6,10 @@
     "origins:aerial_combatant",
     "better_origins:soft_landing",
     "better_origins:brittle_wings",
-    "better_origins:sky_lord"
+    "better_origins:sky_lord",
+    "better_origins:wind_charge",
+    "better_origins:wind_charges",
+    "better_origins:wind_charge_regen",
+    "better_origins:wind_charge_respawn"
   ]
 }

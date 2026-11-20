@@ -10,7 +10,7 @@
   "power.better_origins.internal_heat.name": "Internal Heat",
   "power.better_origins.internal_heat.description": "The fire inside you burns energy: you get hungry faster.",
   "power.better_origins.fireball.name": "Fireball",
-  "power.better_origins.fireball.description": "Shoot a small fireball where you are looking. 4 second cooldown.",
+  "power.better_origins.fireball.description": "Shoot a small fireball where you are looking. 3 second cooldown.",
   "power.better_origins.nether_diet.name": "Nether Diet",
   "power.better_origins.nether_diet.description": "You can eat crimson and warped fungi.",
   "power.better_origins.blazeborn_kin.name": "Fire Kinship",
@@ -93,5 +93,7 @@
   "subtitles.better_origins.adrenaline_activate": "Adrenaline unleashed",
   "subtitles.better_origins.adrenaline_rush": "Heart pounding",
   "subtitles.better_origins.adrenaline_crash": "Adrenaline fades",
-  "item.better_origins.perfect_human_emblem": "Perfect Human Emblem"
+  "item.better_origins.perfect_human_emblem": "Perfect Human Emblem",
+  "power.better_origins.wind_charge.name": "Wind Charge",
+  "power.better_origins.wind_charge.description": "Throw a Breeze's wind charge where you are looking. You store up to 3: throw them one at a time (0.5 second cooldown); each used charge recharges in 10 seconds, one after the other."
 }
