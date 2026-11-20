@@ -1,0 +1,24 @@
+{
+  "type": "origins:modify_exhaustion",
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:resource",
+        "resource": "better_origins:adrenaline_timer",
+        "comparison": "<=",
+        "compare_to": 0
+      },
+      {
+        "type": "origins:resource",
+        "resource": "better_origins:adrenaline_timer",
+        "comparison": ">",
+        "compare_to": 1800
+      }
+    ]
+  },
+  "modifier": {
+    "value": 0.25,
+    "operation": "multiply_base_multiplicative"
+  }
+}

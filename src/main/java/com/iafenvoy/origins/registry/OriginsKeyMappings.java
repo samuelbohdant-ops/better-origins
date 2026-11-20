@@ -30,7 +30,7 @@ public enum OriginsKeyMappings {
 
     public final String CATEGORY = "category.origins";
     public final KeyMapping PRIMARY_ACTIVE = new KeyMapping(Constants.PRIMARY_ACTIVE_KEY, GLFW.GLFW_KEY_G, this.CATEGORY);
-    public final KeyMapping SECONDARY_ACTIVE = new KeyMapping(Constants.SECONDARY_ACTIVE_KEY, GLFW.GLFW_KEY_UNKNOWN, this.CATEGORY);
+    public final KeyMapping SECONDARY_ACTIVE = new KeyMapping(Constants.SECONDARY_ACTIVE_KEY, GLFW.GLFW_KEY_H, this.CATEGORY);
     public final KeyMapping VIEW_ORIGIN = new KeyMapping("key.origins.view_origin", GLFW.GLFW_KEY_O, this.CATEGORY);
     public final List<KeyMapping> ACTIVATE_KEYS = new LinkedList<>();
 

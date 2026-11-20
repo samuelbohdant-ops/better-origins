@@ -1,0 +1,18 @@
+{
+  "type": "origins:active_self",
+  "cooldown": 1,
+  "hidden": true,
+  "key": {
+    "key": "key.jump",
+    "continuous": true
+  },
+  "condition": {
+    "type": "origins:power_active",
+    "power": "better_origins:shulk_float"
+  },
+  "entity_action": {
+    "type": "origins:add_velocity",
+    "y": 0.012,
+    "space": "world"
+  }
+}

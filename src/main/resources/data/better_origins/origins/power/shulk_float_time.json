@@ -1,0 +1,12 @@
+{
+  "type": "origins:resource",
+  "min": 0,
+  "max": 300,
+  "start_value": 300,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 0,
+    "order": 5
+  },
+  "hidden": true
+}

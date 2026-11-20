@@ -1,0 +1,23 @@
+{
+  "type": "origins:target_action_on_hit",
+  "target_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:living"
+      },
+      {
+        "type": "origins:chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "id": "minecraft:poison",
+      "duration": 60,
+      "amplifier": 0
+    }
+  }
+}

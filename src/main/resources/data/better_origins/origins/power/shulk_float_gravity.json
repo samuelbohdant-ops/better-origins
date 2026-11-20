@@ -1,0 +1,26 @@
+{
+  "type": "origins:conditioned_attribute",
+  "hidden": true,
+  "modifier": [
+    {
+      "attribute": "minecraft:generic.gravity",
+      "operation": "add_multiplied_total",
+      "value": -1.0
+    }
+  ],
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:power_active",
+        "power": "better_origins:shulk_float"
+      },
+      {
+        "type": "origins:not",
+        "condition": {
+          "type": "origins:sneaking"
+        }
+      }
+    ]
+  }
+}

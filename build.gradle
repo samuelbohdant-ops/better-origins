@@ -24,7 +24,7 @@ repositories {
 }
 
 base {
-    archivesName = mod_id
+    archivesName = 'better_origins'
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -122,7 +122,6 @@ dependencies {
     implementation jarJar("maven.modrinth:AdditionalEntityAttributes:6oJLT6m7")
     implementation jarJar("maven.modrinth:caelus:KsfI4QsR")
 
-    implementation "maven.modrinth:jupiter:Jpcw76rq"
 
     compileOnly "maven.modrinth:bedsheet:HbBAModY"
 }

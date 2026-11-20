@@ -1,42 +1,49 @@
-# Origins (NeoForge)
+# Better Origins (NeoForge 1.21.1)
 
-**This mod is still under construction, some functions may not work properly.**
+**Alpha** — things may still change between versions.
 
-This mod is a full rewrite of the [Origins Mod](https://github.com/Apace100/origins-fabric) on NeoForge platform.
+Better Origins is a reworked version of **Origins** for NeoForge. At the start of the game you choose an
+*origin*: each one has its own abilities, buffs and weaknesses. Origins can be changed with the `Orb of Origin`
+and customised with datapacks.
 
-This mod provide an "origin" system. Each of them have special effects, and you can select them when join world or use
-`Orb of Origin` items. Also, you can use datapacks to customize origins.
+Better Origins **replaces** Origins: install one or the other, not both. It keeps the same internal ID (`origins`)
+and the same content, so **datapacks and addons made for Origins (NeoForge) keep working**, including addons that
+add new origins.
 
-## FAQ
+## What is different from Origins
 
-### Some powers missing?
+- **Reworked origins:** Merling, Blazeborn, Elytrian, Enderian, Arachnid, Shulk, Phantom and Feline have new
+  abilities, buffs and weaknesses (kin mobs, fireball, web throw, levitation burst, floating, spectral form,
+  shadow veil, pounce and more).
+- **New origin:** The Perfect Human, with the Adrenaline ability.
+- **Removed origin:** Avian.
+- **New enchantments:** Sun Protection and Evolved Gills (helmets only).
+- **Up to 5 ability keys** (primary G, secondary H, third N, fourth `,`, fifth `.`), all rebindable.
+- **Fixes:** origin bonuses no longer stay on the player after changing origin; ability cooldowns reset when you
+  respawn; Origins' broken Claustrophobia power file is fixed.
+- **No extra mods needed:** the configuration uses NeoForge's own config system
+  (`config/origins-common.toml`, also editable in game from the mod list).
 
-NeoForge and Additional Entity Attributes provides some attributes which can replace them, just use AttributePowers
-instead.
+## Requirements
 
-### Are datapacks for Fabric version capable with this mod?
+- Minecraft 1.21.1
+- NeoForge 21.1.228 or newer
 
-Sadly not, Fabric version use their own logic to load datapacks but this mod load them with vanilla methods. They have
-different data structure. Also, a lot of powers changed parameters, so you need extra changes to make them work.
+## Credits
 
-You can follow [this guide](https://docs.iafenvoy.com/docs/mod/origins/guides/porting/) to port your datapack to this
-mod. You can also try to use [Auto Converter](https://docs.iafenvoy.com/docs/mod/origins/guides/porting/converter) to
-convert your datapack, it may not do everything but can save you a lot of time.
+Better Origins is made by **Samulele_borsuk**, based on the work of:
 
-**You can also join our Discord server to ask for porting help. I'll help if I have spare time (Free).**
+- **IAFEnvoy** and contributors (yuqijun, Mai-xiyu, LukeElrod): [Origins for NeoForge](https://github.com/IAFEnvoy/Origins-NeoForge),
+  licensed under `LGPL-3.0`. Better Origins is a modified version of this mod.
+- **Apace**: author of the original [Origins mod](https://github.com/Apace100/origins-fabric) (`MIT`).
+- **EdwinMindcraft**: author of the [Forge port of Origins](https://github.com/EdwinMindcraft/origins-forge) (`MIT`).
+- **UltrusBot**: author of [Alternate Origin GUI](https://github.com/UltrusBot/AltOriginGui) (`MIT`).
+- **ChrysanthCow**: author of [Apugli](https://github.com/MerchantCalico/apugli) (`LGPL-3.0`).
 
-## Credit
+Included libraries: Additional Entity Attributes, Caelus API, Integration.
 
-Special thanks to the following developers for ideas and some code:
+## License
 
-- Apace: Author of the [`Origins Mod`](https://github.com/Apace100/origins-fabric), open source under `MIT` license.
-- EdwinMindcraft: Author of the [`Forge` port of `Origins Mod`](https://github.com/EdwinMindcraft/origins-forge), open
-  source under `MIT` license.
-- UltrusBot: Author of [`Alternate Origin GUI`](https://github.com/UltrusBot/AltOriginGui), a better choose origin
-  screen, open source under `MIT` license.
-- ChrysanthCow: Author of [`Apugli`](https://github.com/MerchantCalico/apugli), extends actions, conditions and so on,
-  open source under `LGPL-3.0` license.
-
-## Discord
-
-https://discord.gg/NDzz2upqAk
+Better Origins is a modified version of Origins (NeoForge) and is distributed under the
+**GNU Lesser General Public License v3.0** — see [`LICENSE`](LICENSE).
+The full source code of every published version is available in this repository.

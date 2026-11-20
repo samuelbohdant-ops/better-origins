@@ -2,10 +2,10 @@
   "replace": false,
   "values": [
     "origins:elytra",
-    "origins:launch_into_air",
+    "better_origins:gift_of_the_winds",
     "origins:aerial_combatant",
-    "origins:light_armor",
-    "origins:claustrophobia",
-    "origins:more_kinetic_damage"
+    "better_origins:soft_landing",
+    "better_origins:brittle_wings",
+    "better_origins:sky_lord"
   ]
 }

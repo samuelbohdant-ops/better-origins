@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#better_origins:perfect_human"
+  ],
+  "icon": {
+    "id": "minecraft:totem_of_undying"
+  },
+  "order": 0,
+  "impact": 3
+}

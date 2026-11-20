@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "better_origins:perfect_heart",
+    "better_origins:perfect_body",
+    "better_origins:perfect_mining",
+    "better_origins:perfect_swim",
+    "better_origins:perfect_healing",
+    "better_origins:perfect_appetite",
+    "better_origins:perfect_strength",
+    "better_origins:perfect_toughness",
+    "better_origins:perfect_eyes",
+    "better_origins:adrenaline",
+    "better_origins:adrenaline_timer",
+    "better_origins:adrenaline_respawn",
+    "better_origins:adrenaline_clock",
+    "better_origins:adrenaline_invincible",
+    "better_origins:adrenaline_rush",
+    "better_origins:adrenaline_peak"
+  ]
+}

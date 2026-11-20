@@ -1,0 +1,62 @@
+{
+  "type": "origins:active_self",
+  "cooldown": 160,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 3,
+    "order": 0
+  },
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  },
+  "entity_action": {
+    "type": "origins:selector_action",
+    "selector": "@e[distance=0.1..5]",
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:living"
+          },
+          {
+            "type": "origins:not",
+            "condition": {
+              "type": "origins:tamed"
+            }
+          },
+          {
+            "type": "origins:not",
+            "condition": {
+              "type": "origins:nbt",
+              "nbt": {
+                "RedomesticateTamed": true
+              }
+            }
+          },
+          {
+            "type": "origins:not",
+            "condition": {
+              "type": "origins:origin",
+              "origin": "origins:shulk",
+              "layer": "origins:origin"
+            }
+          }
+        ]
+      }
+    },
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:apply_effect",
+        "effect": {
+          "id": "minecraft:levitation",
+          "duration": 60,
+          "amplifier": 2
+        }
+      }
+    }
+  }
+}

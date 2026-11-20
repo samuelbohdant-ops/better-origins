@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:enderman",
+    "minecraft:endermite",
+    {
+      "id": "alexsmobs:mimicube",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:enderiophage",
+      "required": false
+    },
+    {
+      "id": "betterend:shadow_walker",
+      "required": false
+    }
+  ]
+}

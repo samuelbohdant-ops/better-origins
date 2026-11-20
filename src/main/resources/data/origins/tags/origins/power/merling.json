@@ -4,9 +4,11 @@
     "origins:water_breathing",
     "origins:water_vision",
     "origins:aqua_affinity",
-    "origins:swim_speed",
+    "better_origins:fins",
     "origins:like_water",
     "origins:conduit_power_on_land",
-    "origins:air_from_potions"
+    "origins:air_from_potions",
+    "better_origins:merling_kin",
+    "better_origins:evolved_gills"
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "type": "origins:active_self",
+  "cooldown": 60,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 2,
+    "order": 0
+  },
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:add_velocity",
+        "z": 1.6,
+        "y": 0.2,
+        "space": "local",
+        "set": true
+      },
+      {
+        "type": "origins:exhaust",
+        "amount": 2.0
+      }
+    ]
+  }
+}

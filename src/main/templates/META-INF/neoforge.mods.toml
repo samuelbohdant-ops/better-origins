@@ -15,7 +15,8 @@ loaderVersion = "${loader_version_range}" #mandatory
 license = "${mod_license}"
 
 # A URL to refer people to when problems occur with this mod
-issueTrackerURL = "https://github.com/IAFEnvoy/Origins-NeoForge/issues" #optional
+# Better Origins: put your GitHub link here once the repository exists, then remove the #
+#issueTrackerURL = "https://github.com/YOUR_NAME/better-origins/issues" #optional
 
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
@@ -83,13 +84,6 @@ modId = "minecraft"
 type = "required"
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
 versionRange = "${minecraft_version_range}"
-ordering = "NONE"
-side = "BOTH"
-
-[[dependencies.${mod_id}]]
-modId = "jupiter"
-type = "required"
-versionRange = "[0,)"
 ordering = "NONE"
 side = "BOTH"
 

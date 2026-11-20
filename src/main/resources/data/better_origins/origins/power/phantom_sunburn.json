@@ -1,0 +1,105 @@
+{
+  "type": "origins:multiple",
+  "level0": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:set_on_fire",
+      "tick": 40
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun"
+        },
+        {
+          "type": "origins:not",
+          "condition": {
+            "type": "origins:invisible"
+          }
+        },
+        {
+          "type": "origins:not",
+          "condition": {
+            "type": "origins:on_fire"
+          }
+        },
+        {
+          "type": "origins:enchantment",
+          "enchantment": "better_origins:sun_protection",
+          "comparison": "==",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "level1": {
+    "type": "origins:action_over_time",
+    "interval": 40,
+    "entity_action": {
+      "type": "origins:set_on_fire",
+      "tick": 20
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun"
+        },
+        {
+          "type": "origins:not",
+          "condition": {
+            "type": "origins:invisible"
+          }
+        },
+        {
+          "type": "origins:not",
+          "condition": {
+            "type": "origins:on_fire"
+          }
+        },
+        {
+          "type": "origins:enchantment",
+          "enchantment": "better_origins:sun_protection",
+          "comparison": "==",
+          "compare_to": 1
+        }
+      ]
+    }
+  },
+  "level2": {
+    "type": "origins:action_over_time",
+    "interval": 80,
+    "entity_action": {
+      "type": "origins:set_on_fire",
+      "tick": 20
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:exposed_to_sun"
+        },
+        {
+          "type": "origins:not",
+          "condition": {
+            "type": "origins:invisible"
+          }
+        },
+        {
+          "type": "origins:not",
+          "condition": {
+            "type": "origins:on_fire"
+          }
+        },
+        {
+          "type": "origins:enchantment",
+          "enchantment": "better_origins:sun_protection",
+          "comparison": "==",
+          "compare_to": 2
+        }
+      ]
+    }
+  }
+}

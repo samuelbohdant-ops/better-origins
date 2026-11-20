@@ -1,14 +1,18 @@
 {
   "replace": false,
   "values": [
-    "origins:phantomize",
-    "origins:translucent",
-    "origins:phasing",
-    "origins:invisibility",
-    "origins:burn_in_daylight",
-    "origins:hunger_over_time",
-    "origins:fragile",
-    "origins:phantomize_overlay",
-    "origins:phantomize_callback"
+    "better_origins:phantom_phasing_toggle",
+    "better_origins:phantom_phasing",
+    "better_origins:phantom_translucent",
+    "better_origins:phantom_overlay",
+    "better_origins:phantom_veil",
+    "better_origins:phantom_veil_time",
+    "better_origins:phantom_veil_tick",
+    "better_origins:phantom_veil_respawn",
+    "better_origins:phantom_invisibility",
+    "better_origins:phantom_hunger",
+    "better_origins:phantom_sunburn",
+    "better_origins:moon_armor",
+    "better_origins:phantom_frailty"
   ]
 }

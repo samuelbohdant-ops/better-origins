@@ -1,0 +1,51 @@
+{
+  "type": "origins:multiple",
+  "level1": {
+    "type": "origins:conditioned_attribute",
+    "condition": {
+      "type": "origins:enchantment",
+      "enchantment": "better_origins:evolved_gills",
+      "comparison": "==",
+      "compare_to": 1
+    },
+    "modifier": [
+      {
+        "attribute": "minecraft:generic.oxygen_bonus",
+        "operation": "add_value",
+        "value": 3.0
+      }
+    ]
+  },
+  "level2": {
+    "type": "origins:conditioned_attribute",
+    "condition": {
+      "type": "origins:enchantment",
+      "enchantment": "better_origins:evolved_gills",
+      "comparison": "==",
+      "compare_to": 2
+    },
+    "modifier": [
+      {
+        "attribute": "minecraft:generic.oxygen_bonus",
+        "operation": "add_value",
+        "value": 11.0
+      }
+    ]
+  },
+  "level3": {
+    "type": "origins:conditioned_attribute",
+    "condition": {
+      "type": "origins:enchantment",
+      "enchantment": "better_origins:evolved_gills",
+      "comparison": ">=",
+      "compare_to": 3
+    },
+    "modifier": [
+      {
+        "attribute": "minecraft:generic.oxygen_bonus",
+        "operation": "add_value",
+        "value": 1024.0
+      }
+    ]
+  }
+}

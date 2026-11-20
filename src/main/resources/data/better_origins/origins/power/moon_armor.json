@@ -1,0 +1,20 @@
+{
+  "type": "origins:modify_damage_taken",
+  "condition": {
+    "type": "origins:not",
+    "condition": {
+      "type": "origins:daytime"
+    }
+  },
+  "damage_condition": {
+    "type": "origins:not",
+    "condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:bypasses_resistance"
+    }
+  },
+  "modifier": {
+    "value": -0.2,
+    "operation": "multiply_base_multiplicative"
+  }
+}

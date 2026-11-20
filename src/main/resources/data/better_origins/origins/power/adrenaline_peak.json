@@ -1,0 +1,22 @@
+{
+  "type": "origins:conditioned_attribute",
+  "hidden": true,
+  "condition": {
+    "type": "origins:resource",
+    "resource": "better_origins:adrenaline_timer",
+    "comparison": ">",
+    "compare_to": 2100
+  },
+  "modifier": [
+    {
+      "attribute": "additionalentityattributes:generic.water_speed",
+      "operation": "add_multiplied_base",
+      "value": 2.0
+    },
+    {
+      "attribute": "minecraft:generic.knockback_resistance",
+      "operation": "add_value",
+      "value": 1.0
+    }
+  ]
+}

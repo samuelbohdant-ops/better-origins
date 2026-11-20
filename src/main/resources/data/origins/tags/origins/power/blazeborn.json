@@ -3,11 +3,15 @@
   "values": [
     "origins:fire_immunity",
     "origins:nether_spawn",
-    "origins:burning_wrath",
-    "origins:hotblooded",
-    "origins:water_vulnerability",
     "origins:flame_particles",
     "origins:damage_from_snowballs",
-    "origins:damage_from_potions"
+    "origins:damage_from_potions",
+    "better_origins:blaze_hydrophobia",
+    "better_origins:nether_born",
+    "better_origins:internal_heat",
+    "better_origins:fireball",
+    "better_origins:nether_diet",
+    "better_origins:blazeborn_kin",
+    "better_origins:magma_touch"
   ]
 }

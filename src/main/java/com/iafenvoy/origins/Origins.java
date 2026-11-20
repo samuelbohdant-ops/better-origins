@@ -1,7 +1,5 @@
 package com.iafenvoy.origins;
 
-import com.iafenvoy.jupiter.ConfigManager;
-import com.iafenvoy.jupiter.ServerConfigManager;
 import com.iafenvoy.origins.config.OriginsConfig;
 import com.iafenvoy.origins.data.action.builtin.BiEntityActions;
 import com.iafenvoy.origins.data.action.builtin.BlockActions;
@@ -17,7 +15,9 @@ import com.iafenvoy.origins.data.power.component.BuiltinComponents;
 import com.iafenvoy.origins.registry.*;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 import org.slf4j.Logger;
 
 @Mod(Origins.MOD_ID)
@@ -25,8 +25,9 @@ public final class Origins {
     public static final String MOD_ID = "origins";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public Origins(IEventBus bus) {
-        ConfigManager.getInstance().registerServerConfigHandler(OriginsConfig.INSTANCE, ServerConfigManager.PermissionChecker.IS_OPERATOR);
+    public Origins(IEventBus bus, ModContainer container) {
+        // Better Origins: NeoForge config (config/origins-common.toml) instead of Jupiter
+        container.registerConfig(ModConfig.Type.COMMON, OriginsConfig.SPEC);
 
         OriginsAttachments.REGISTRY.register(bus);
         OriginsBlocks.REGISTRY.register(bus);

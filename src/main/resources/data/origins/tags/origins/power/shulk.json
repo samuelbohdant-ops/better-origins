@@ -6,6 +6,18 @@
     "origins:strong_arms",
     "origins:strong_arms_break_speed",
     "origins:no_shield",
-    "origins:more_exhaustion"
+    "better_origins:large_appetite",
+    "better_origins:levitation_burst",
+    "better_origins:shulker_shell",
+    "better_origins:shulk_float",
+    "better_origins:shulk_float_time",
+    "better_origins:shulk_float_tick",
+    "better_origins:shulk_float_respawn",
+    "better_origins:shulk_float_gravity",
+    "better_origins:shulk_float_rise",
+    "better_origins:shulk_float_descent",
+    "better_origins:shulk_float_landing",
+    "better_origins:shulk_kin",
+    "better_origins:shulk_heavy"
   ]
 }

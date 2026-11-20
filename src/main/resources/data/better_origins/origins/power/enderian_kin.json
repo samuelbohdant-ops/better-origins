@@ -1,0 +1,40 @@
+{
+  "type": "origins:multiple",
+  "ignore": {
+    "type": "origins:prevent_targeting",
+    "mob_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:in_tag",
+          "tag": "better_origins:enderian_kin"
+        },
+        {
+          "type": "origins:not",
+          "condition": {
+            "type": "origins:mob_effect",
+            "effect": "minecraft:unluck"
+          }
+        }
+      ]
+    }
+  },
+  "provoke": {
+    "type": "origins:target_action_on_hit",
+    "target_condition": {
+      "type": "origins:in_tag",
+      "tag": "better_origins:enderian_kin"
+    },
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:unluck",
+        "duration": 300,
+        "amplifier": 0,
+        "ambient": true,
+        "show_particles": false,
+        "show_icon": false
+      }
+    }
+  }
+}

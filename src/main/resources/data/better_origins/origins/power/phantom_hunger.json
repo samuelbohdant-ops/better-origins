@@ -1,0 +1,21 @@
+{
+  "type": "origins:multiple",
+  "phasing": {
+    "type": "origins:exhaust",
+    "interval": 20,
+    "exhaustion": 0.812,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "better_origins:phantom_phasing_toggle"
+    }
+  },
+  "veil": {
+    "type": "origins:exhaust",
+    "interval": 20,
+    "exhaustion": 0.812,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "better_origins:phantom_veil"
+    }
+  }
+}

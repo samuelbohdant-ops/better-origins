@@ -1,0 +1,36 @@
+{
+  "type": "origins:fire_projectile",
+  "cooldown": 40,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 8,
+    "order": 0
+  },
+  "entity_type": "minecraft:snowball",
+  "speed": 1.5,
+  "divergence": 0,
+  "tag": {
+    "Tags": [
+      "better_origins_web"
+    ],
+    "Item": {
+      "id": "minecraft:cobweb",
+      "count": 1
+    },
+    "Passengers": [
+      {
+        "id": "minecraft:falling_block",
+        "BlockState": {
+          "Name": "minecraft:cobweb"
+        },
+        "DropItem": false,
+        "Time": 1
+      }
+    ]
+  },
+  "sound": "minecraft:entity.snowball.throw",
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  }
+}

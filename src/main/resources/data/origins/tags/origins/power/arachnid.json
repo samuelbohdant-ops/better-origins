@@ -3,7 +3,10 @@
   "values": [
     "origins:climbing",
     "origins:master_of_webs",
-    "origins:carnivore",
-    "origins:fragile"
+    "better_origins:arthropod",
+    "better_origins:venom_bite",
+    "better_origins:web_throw",
+    "better_origins:web_hit",
+    "better_origins:arachnid_kin"
   ]
 }

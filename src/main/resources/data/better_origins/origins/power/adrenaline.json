@@ -1,0 +1,89 @@
+{
+  "type": "origins:prevent_death",
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:resource",
+        "resource": "better_origins:adrenaline_timer",
+        "comparison": "<=",
+        "compare_to": 0
+      },
+      {
+        "type": "origins:xp_levels",
+        "comparison": ">=",
+        "compare_to": 10
+      }
+    ]
+  },
+  "damage_condition": {
+    "type": "origins:not",
+    "condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:bypasses_invulnerability"
+    }
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:change_resource",
+        "resource": "better_origins:adrenaline_timer",
+        "change": 2400,
+        "operation": "set"
+      },
+      {
+        "type": "origins:add_xp",
+        "levels": -10
+      },
+      {
+        "type": "origins:heal",
+        "amount": 8.2
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": [
+          {
+            "id": "minecraft:regeneration",
+            "duration": 600,
+            "amplifier": 1,
+            "show_particles": true,
+            "show_icon": true
+          },
+          {
+            "id": "minecraft:strength",
+            "duration": 300,
+            "amplifier": 2,
+            "show_particles": true,
+            "show_icon": true
+          },
+          {
+            "id": "minecraft:speed",
+            "duration": 300,
+            "amplifier": 2,
+            "show_particles": true,
+            "show_icon": true
+          },
+          {
+            "id": "minecraft:jump_boost",
+            "duration": 300,
+            "amplifier": 2,
+            "show_particles": true,
+            "show_icon": true
+          },
+          {
+            "id": "minecraft:night_vision",
+            "duration": 300,
+            "amplifier": 0,
+            "show_particles": true,
+            "show_icon": true
+          }
+        ]
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:item.totem.use"
+      }
+    ]
+  }
+}

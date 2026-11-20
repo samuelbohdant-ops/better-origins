@@ -1,0 +1,57 @@
+{
+  "type": "origins:action_on_projectile_hit",
+  "hidden": true,
+  "bientity_condition": {
+    "type": "origins:actor_condition",
+    "condition": {
+      "type": "origins:nbt",
+      "nbt": {
+        "Tags": [
+          "better_origins_web"
+        ]
+      }
+    }
+  },
+  "bientity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:target_action",
+        "action": {
+          "type": "origins:block_action_at",
+          "block_action": {
+            "type": "origins:if_else",
+            "condition": {
+              "type": "origins:and",
+              "conditions": [
+                {
+                  "type": "origins:replaceable"
+                },
+                {
+                  "type": "origins:fluid",
+                  "fluid_condition": {
+                    "type": "origins:empty"
+                  }
+                }
+              ]
+            },
+            "if_action": {
+              "type": "origins:set_block",
+              "block": "minecraft:cobweb"
+            }
+          }
+        }
+      },
+      {
+        "type": "origins:source_action",
+        "action": {
+          "type": "origins:passenger_action",
+          "action": {
+            "type": "origins:execute_command",
+            "command": "kill @s"
+          }
+        }
+      }
+    ]
+  }
+}

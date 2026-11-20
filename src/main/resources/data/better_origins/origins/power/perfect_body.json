@@ -1,0 +1,42 @@
+{
+  "type": "origins:conditioned_attribute",
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:resource",
+        "resource": "better_origins:adrenaline_timer",
+        "comparison": "<=",
+        "compare_to": 0
+      },
+      {
+        "type": "origins:resource",
+        "resource": "better_origins:adrenaline_timer",
+        "comparison": ">",
+        "compare_to": 1800
+      }
+    ]
+  },
+  "modifier": [
+    {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "add_multiplied_base",
+      "value": 0.2
+    },
+    {
+      "attribute": "minecraft:generic.jump_strength",
+      "operation": "add_multiplied_base",
+      "value": 0.1
+    },
+    {
+      "attribute": "minecraft:player.block_interaction_range",
+      "operation": "add_value",
+      "value": 1.5
+    },
+    {
+      "attribute": "minecraft:player.entity_interaction_range",
+      "operation": "add_value",
+      "value": 1.5
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "origins:invisibility",
+  "render_armor": true,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:power_active",
+        "power": "better_origins:phantom_veil"
+      },
+      {
+        "type": "origins:resource",
+        "resource": "better_origins:phantom_veil_time",
+        "comparison": ">",
+        "compare_to": 0
+      }
+    ]
+  },
+  "hidden": true
+}

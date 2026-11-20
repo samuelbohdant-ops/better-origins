@@ -1,0 +1,17 @@
+{
+  "type": "origins:fire_projectile",
+  "cooldown": 80,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 7,
+    "order": 0
+  },
+  "entity_type": "minecraft:small_fireball",
+  "speed": 1.5,
+  "divergence": 0,
+  "sound": "minecraft:entity.blaze.shoot",
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  }
+}

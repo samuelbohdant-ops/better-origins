@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "origins:arachnid",
-    "origins:avian",
     "origins:blazeborn",
     "origins:elytrian",
     "origins:enderian",
@@ -10,6 +9,7 @@
     "origins:human",
     "origins:merling",
     "origins:phantom",
-    "origins:shulk"
+    "origins:shulk",
+    "better_origins:perfect_human"
   ]
 }

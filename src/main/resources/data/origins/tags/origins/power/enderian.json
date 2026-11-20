@@ -4,8 +4,10 @@
     "origins:throw_ender_pearl",
     "origins:water_vulnerability",
     "origins:pumpkin_hate",
-    "origins:extra_reach",
+    "better_origins:slender_body",
     "origins:ender_particles",
-    "origins:damage_from_potions"
+    "origins:damage_from_potions",
+    "better_origins:end_eyes",
+    "better_origins:enderian_kin"
   ]
 }
