@@ -89,5 +89,9 @@
   "key.better_origins.quaternary_active": "Active Power (Quaternary)",
   "key.better_origins.quinary_active": "Active Power (Quinary)",
   "origin.better_origins.perfect_human.name": "The Perfect Human",
-  "origin.better_origins.perfect_human.description": "A human at the peak of their abilities: stronger, faster and tougher in everything. When death comes, Adrenaline puts them back on their feet, but then the body crashes."
+  "origin.better_origins.perfect_human.description": "A human at the peak of their abilities: stronger, faster and tougher in everything. When death comes, Adrenaline puts them back on their feet, but then the body crashes.",
+  "subtitles.better_origins.adrenaline_activate": "Adrenaline unleashed",
+  "subtitles.better_origins.adrenaline_rush": "Heart pounding",
+  "subtitles.better_origins.adrenaline_crash": "Adrenaline fades",
+  "item.better_origins.perfect_human_emblem": "Perfect Human Emblem"
 }

@@ -89,5 +89,9 @@
   "key.better_origins.quaternary_active": "Attiva Potere (Quaternario)",
   "key.better_origins.quinary_active": "Attiva Potere (Quinario)",
   "origin.better_origins.perfect_human.name": "L'Umano Perfetto",
-  "origin.better_origins.perfect_human.description": "Un essere umano al massimo delle sue capacità: più forte, più veloce e più resistente in tutto. Quando la morte arriva, l'Adrenalina lo rimette in piedi, ma poi il corpo crolla."
+  "origin.better_origins.perfect_human.description": "Un essere umano al massimo delle sue capacità: più forte, più veloce e più resistente in tutto. Quando la morte arriva, l'Adrenalina lo rimette in piedi, ma poi il corpo crolla.",
+  "subtitles.better_origins.adrenaline_activate": "Adrenalina scatenata",
+  "subtitles.better_origins.adrenaline_rush": "Battito accelerato",
+  "subtitles.better_origins.adrenaline_crash": "L'adrenalina svanisce",
+  "item.better_origins.perfect_human_emblem": "Emblema dell'Umano Perfetto"
 }

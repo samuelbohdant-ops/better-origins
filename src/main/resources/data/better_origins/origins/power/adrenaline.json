@@ -82,7 +82,9 @@
       },
       {
         "type": "origins:play_sound",
-        "sound": "minecraft:item.totem.use"
+        "sound": "better_origins:adrenaline_activate",
+        "category": "players",
+        "volume": 1.0
       }
     ]
   }

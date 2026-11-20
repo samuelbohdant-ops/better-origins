@@ -1,0 +1,23 @@
+{
+  "adrenaline_activate": {
+    "subtitle": "subtitles.better_origins.adrenaline_activate",
+    "sounds": [
+      "better_origins:adrenaline_activate"
+    ]
+  },
+  "adrenaline_rush": {
+    "subtitle": "subtitles.better_origins.adrenaline_rush",
+    "sounds": [
+      {
+        "name": "better_origins:adrenaline_rush",
+        "stream": true
+      }
+    ]
+  },
+  "adrenaline_crash": {
+    "subtitle": "subtitles.better_origins.adrenaline_crash",
+    "sounds": [
+      "better_origins:adrenaline_crash"
+    ]
+  }
+}
