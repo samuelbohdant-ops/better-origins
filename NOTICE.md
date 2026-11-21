@@ -18,9 +18,8 @@ All of these were made for this project and are distributed under the same licen
 - Perfect Human, Feline, Bat Wing, Road Runner, Cave Worm and Angel emblem icons, status effect icons, Angel
   blessing icons and menu, origin menu backgrounds, ability bar textures and icons,
   Shulk inventory frame, Adrenaline screen effect.
-- Sounds `adrenaline_activate.ogg`, `adrenaline_crash.ogg`, `elytrian_launch.ogg`, `web_shoot.ogg`, `shulk_force.ogg`,
-  `pounce_dash.ogg`, `fireball_spit.ogg`, `bat_echo_on.ogg`, `bat_echo_loop.ogg`, `bat_echo_off.ogg`, `bat_takeoff.ogg` and `bat_dash.ogg`:
-  synthesized from scratch.
+- All sound files except `adrenaline_rush.ogg` (Adrenaline, ability sounds of Elytrian, Arachnid, Shulk, Feline,
+  Blazeborn, Superior Bat, Road Runner, Cave Worm and Angel): synthesized from scratch.
 - Sound `adrenaline_rush.ogg`: edited (tempo, length, loop) from a free heartbeat sound effect shared on YouTube for
   developers (attribution not required).
 

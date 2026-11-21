@@ -29,8 +29,8 @@ import java.util.Set;
  * Cave Worm, server side.
  * - Prospector: every block the Cave Worm breaks drops loot as if the tool had one more level of Fortune
  *   (no Fortune -> Fortune I, Fortune III -> Fortune IV).
- * - Cave Parasites: while on, every mob, player and pet within 5 blocks (not the Cave Worm's own pets, not other
- *   Cave Worms) builds up parasites: 12 s in the zone = level 10. Outside the zone it drops 1 level every 0.5 s.
+ * - Cave Parasites: while on, every mob, player and pet within 6 blocks (not the Cave Worm's own pets, not other
+ *   Cave Worms) builds up parasites: 12 s in the zone = level 10. Outside the zone it drops 1 level every 1.5 s.
  *   Effects by level: 1-3 parasite damage (like Poison I) + Slowness I; 4-6 like Poison II + Slowness II +
  *   Darkness; 7-9 like Poison III + Slowness III + Darkness; 10 like Poison IV + Slowness IV + Darkness. The damage
  *   works on every mob (also undead and spiders, which are immune to real Poison); below level 6 it stops at half a
@@ -40,8 +40,8 @@ import java.util.Set;
 public final class CaveWormHandler {
     public static final float MAX_PARASITES = 240F;           // 12 s x 20 ticks = level 10
     private static final float PER_LEVEL = MAX_PARASITES / 10F;
-    private static final float DECAY_PER_TICK = PER_LEVEL / 10F; // 1 level every 0.5 s
-    public static final double RADIUS = 5.0; // the zone ring is drawn by ZoneParticlesClient
+    private static final float DECAY_PER_TICK = PER_LEVEL / 30F; // 1 level every 1.5 s
+    public static final double RADIUS = 6.0; // the zone ring is drawn by ZoneParticlesClient
     private static final DustParticleOptions INFECTED_DUST = new DustParticleOptions(new Vector3f(0.45F, 0.8F, 0.1F), 0.9F);
     private static final Set<LivingEntity> INFECTED = Collections.newSetFromMap(new IdentityHashMap<>());
     private static final ThreadLocal<Player> MINER = new ThreadLocal<>();
@@ -141,7 +141,7 @@ public final class CaveWormHandler {
 
     /**
      * The parasites hurt by themselves (Poison does nothing to undead mobs and spiders), ignoring armour like poison:
-     * 1.5 damage every 20 ticks at level 1-3, then 2 / 3.5 / 5 damage every 10 ticks. Below level 6 they stop at half a heart; from level 6 they can kill.
+     * 2.5 damage every 20 ticks at level 1-3, then 3 / 5 / 7 damage every 10 ticks. Below level 6 they stop at half a heart; from level 6 they can kill.
      */
     private static void applyEffects(LivingEntity target, int level, long time) {
         if (level <= 0) return;
@@ -155,7 +155,7 @@ public final class CaveWormHandler {
         }
         // hits closer than 10 ticks would be blocked by the damage cooldown, so the top tiers hit harder instead
         int interval = tier == 0 ? 20 : 10;
-        float damage = tier == 0 ? 1.5F : tier == 1 ? 2.0F : tier == 2 ? 3.5F : 5.0F;
+        float damage = tier == 0 ? 2.5F : tier == 1 ? 3.0F : tier == 2 ? 5.0F : 7.0F;
         if (time % interval != 0) return;
         if (level < 6) damage = Math.min(damage, target.getHealth() - 1.0F); // not deadly yet: stop at half a heart
         if (damage > 0) target.hurt(target.damageSources().magic(), damage);

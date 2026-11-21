@@ -2,6 +2,16 @@
 
 All versions are for Minecraft 1.21.1 (NeoForge). File names: `better_origins-1.21.1-<version>.jar`.
 
+## 0.9.2
+- Road Runner: a whoosh when you start sprinting with Speed Burst, then a rushing-wind loop that gets louder the
+  faster you run.
+- Cave Worm: toxic activation, bubbling loop and drain-away deactivation sounds for Cave Parasites.
+- Angel: cold holy sounds for Blessing Self, warm hopeful sounds for Blessing Others, and an energising loop when
+  both are on. Loops crossfade when the modes change.
+- Cave Worm: Cave Parasites radius 6 blocks (was 5), stronger damage, parasites wear off 3 times slower (1 level
+  every 1.5 s); surface sprinting is 15% slower instead of 25% (at -25% sprinting was no faster than walking).
+- All these sounds are heard by nearby players (the Self loop only by the Angel) and cost no network traffic.
+
 ## 0.9.1
 - Ability checks skip mobs, items and arrows without origin data straight away (less work every tick).
 - Road Runner: wall crashes are detected reliably (real speed, the whole side of the body, walls at feet+head or

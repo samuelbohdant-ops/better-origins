@@ -79,5 +79,77 @@
     "sounds": [
       "better_origins:bat_dash"
     ]
+  },
+  "rr_sprint_whoosh": {
+    "subtitle": "subtitles.better_origins.rr_sprint_whoosh",
+    "sounds": [
+      "better_origins:rr_sprint_whoosh"
+    ]
+  },
+  "rr_sprint_wind": {
+    "subtitle": "subtitles.better_origins.rr_sprint_wind",
+    "sounds": [
+      "better_origins:rr_sprint_wind"
+    ]
+  },
+  "cw_parasites_on": {
+    "subtitle": "subtitles.better_origins.cw_parasites_on",
+    "sounds": [
+      "better_origins:cw_parasites_on"
+    ]
+  },
+  "cw_parasites_loop": {
+    "subtitle": "subtitles.better_origins.cw_parasites_loop",
+    "sounds": [
+      "better_origins:cw_parasites_loop"
+    ]
+  },
+  "cw_parasites_off": {
+    "subtitle": "subtitles.better_origins.cw_parasites_off",
+    "sounds": [
+      "better_origins:cw_parasites_off"
+    ]
+  },
+  "angel_self_on": {
+    "subtitle": "subtitles.better_origins.angel_self_on",
+    "sounds": [
+      "better_origins:angel_self_on"
+    ]
+  },
+  "angel_self_loop": {
+    "subtitle": "subtitles.better_origins.angel_self_loop",
+    "sounds": [
+      "better_origins:angel_self_loop"
+    ]
+  },
+  "angel_self_off": {
+    "subtitle": "subtitles.better_origins.angel_self_off",
+    "sounds": [
+      "better_origins:angel_self_off"
+    ]
+  },
+  "angel_others_on": {
+    "subtitle": "subtitles.better_origins.angel_others_on",
+    "sounds": [
+      "better_origins:angel_others_on"
+    ]
+  },
+  "angel_others_loop": {
+    "subtitle": "subtitles.better_origins.angel_others_loop",
+    "sounds": [
+      "better_origins:angel_others_loop"
+    ]
+  },
+  "angel_others_off": {
+    "subtitle": "subtitles.better_origins.angel_others_off",
+    "sounds": [
+      "better_origins:angel_others_off"
+    ]
+  },
+  "angel_both_loop": {
+    "subtitle": "subtitles.better_origins.angel_both_loop",
+    "sounds": [
+      "better_origins:angel_both_loop"
+    ]
   }
 }
