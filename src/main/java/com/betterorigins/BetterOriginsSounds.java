@@ -18,6 +18,11 @@ public final class BetterOriginsSounds {
     public static final ResourceLocation ADRENALINE_ACTIVATE_ID = id("adrenaline_activate");
     public static final ResourceLocation ADRENALINE_RUSH_ID = id("adrenaline_rush");
     public static final ResourceLocation ADRENALINE_CRASH_ID = id("adrenaline_crash");
+    public static final ResourceLocation BAT_TAKEOFF_ID = id("bat_takeoff");
+    public static final ResourceLocation BAT_DASH_ID = id("bat_dash");
+    public static final ResourceLocation BAT_ECHO_ON_ID = id("bat_echo_on");
+    public static final ResourceLocation BAT_ECHO_LOOP_ID = id("bat_echo_loop");
+    public static final ResourceLocation BAT_ECHO_OFF_ID = id("bat_echo_off");
     public static final ResourceLocation ELYTRIAN_LAUNCH_ID = id("elytrian_launch");
     public static final ResourceLocation WEB_SHOOT_ID = id("web_shoot");
     public static final ResourceLocation SHULK_FORCE_ID = id("shulk_force");
@@ -27,6 +32,11 @@ public final class BetterOriginsSounds {
     public static final SoundEvent ADRENALINE_ACTIVATE = SoundEvent.createVariableRangeEvent(ADRENALINE_ACTIVATE_ID);
     public static final SoundEvent ADRENALINE_RUSH = SoundEvent.createVariableRangeEvent(ADRENALINE_RUSH_ID);
     public static final SoundEvent ADRENALINE_CRASH = SoundEvent.createVariableRangeEvent(ADRENALINE_CRASH_ID);
+    public static final SoundEvent BAT_TAKEOFF = SoundEvent.createVariableRangeEvent(BAT_TAKEOFF_ID);
+    public static final SoundEvent BAT_DASH = SoundEvent.createVariableRangeEvent(BAT_DASH_ID);
+    public static final SoundEvent BAT_ECHO_ON = SoundEvent.createVariableRangeEvent(BAT_ECHO_ON_ID);
+    public static final SoundEvent BAT_ECHO_LOOP = SoundEvent.createVariableRangeEvent(BAT_ECHO_LOOP_ID);
+    public static final SoundEvent BAT_ECHO_OFF = SoundEvent.createVariableRangeEvent(BAT_ECHO_OFF_ID);
     public static final SoundEvent ELYTRIAN_LAUNCH = SoundEvent.createVariableRangeEvent(ELYTRIAN_LAUNCH_ID);
     public static final SoundEvent WEB_SHOOT = SoundEvent.createVariableRangeEvent(WEB_SHOOT_ID);
     public static final SoundEvent SHULK_FORCE = SoundEvent.createVariableRangeEvent(SHULK_FORCE_ID);
@@ -46,6 +56,11 @@ public final class BetterOriginsSounds {
             helper.register(ADRENALINE_ACTIVATE_ID, ADRENALINE_ACTIVATE);
             helper.register(ADRENALINE_RUSH_ID, ADRENALINE_RUSH);
             helper.register(ADRENALINE_CRASH_ID, ADRENALINE_CRASH);
+            helper.register(BAT_TAKEOFF_ID, BAT_TAKEOFF);
+            helper.register(BAT_DASH_ID, BAT_DASH);
+            helper.register(BAT_ECHO_ON_ID, BAT_ECHO_ON);
+            helper.register(BAT_ECHO_LOOP_ID, BAT_ECHO_LOOP);
+            helper.register(BAT_ECHO_OFF_ID, BAT_ECHO_OFF);
             helper.register(ELYTRIAN_LAUNCH_ID, ELYTRIAN_LAUNCH);
             helper.register(WEB_SHOOT_ID, WEB_SHOOT);
             helper.register(SHULK_FORCE_ID, SHULK_FORCE);

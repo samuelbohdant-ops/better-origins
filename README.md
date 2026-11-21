@@ -15,6 +15,8 @@ add new origins.
 - **Reworked origins:** Merling, Blazeborn, Elytrian, Enderian, Arachnid, Shulk, Phantom and Feline have new
   abilities, buffs and weaknesses (kin mobs, fireball, web throw, levitation burst, floating, spectral form,
   shadow veil, pounce and more).
+- **New origin:** Superior Bat: flies at night, sees mobs and players through walls with Echolocation, burns in
+  the sun.
 - **New origin:** The Perfect Human, with the Adrenaline ability (own sounds, firework burst and red screen effect).
 - **Elytrian Wind Charge:** throw up to 3 Breeze wind charges, each recharging in 10 seconds.
 - **New origin menu:** origins grouped by impact (Standard, Low, Medium, High) with a coloured background for each

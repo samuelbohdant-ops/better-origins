@@ -59,6 +59,7 @@
   ],
   "client": [
     "CapeLayerMixin",
+    "MinecraftGlowMixin",
     "ElytraLayerMixin",
     "Entity$ClientMixin",
     "EntityRenderDispatcherMixin",

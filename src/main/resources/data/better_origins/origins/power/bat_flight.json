@@ -1,0 +1,30 @@
+{
+  "type": "origins:creative_flight",
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:resource",
+        "resource": "better_origins:bat_flight_time",
+        "comparison": ">",
+        "compare_to": 0
+      },
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:not",
+            "condition": {
+              "type": "origins:daytime"
+            }
+          },
+          {
+            "type": "origins:dimension",
+            "dimension": "minecraft:overworld",
+            "inverted": true
+          }
+        ]
+      }
+    ]
+  }
+}

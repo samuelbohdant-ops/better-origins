@@ -1,0 +1,19 @@
+{
+  "type": "origins:modify_air_speed",
+  "hidden": true,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:creative_flying"
+      },
+      {
+        "type": "origins:sprinting"
+      }
+    ]
+  },
+  "modifier": {
+    "value": 0.18,
+    "operation": "multiply_total_multiplicative"
+  }
+}

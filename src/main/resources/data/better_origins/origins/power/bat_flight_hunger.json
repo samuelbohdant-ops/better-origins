@@ -1,0 +1,9 @@
+{
+  "type": "origins:exhaust",
+  "hidden": true,
+  "interval": 20,
+  "exhaustion": 0.4,
+  "condition": {
+    "type": "origins:creative_flying"
+  }
+}

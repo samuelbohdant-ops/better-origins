@@ -1,0 +1,13 @@
+{
+  "type": "origins:modify_damage_taken",
+  "condition": {
+    "type": "origins:creative_flying"
+  },
+  "damage_condition": {
+    "type": "origins:projectile"
+  },
+  "modifier": {
+    "value": 0.5,
+    "operation": "multiply_base_multiplicative"
+  }
+}

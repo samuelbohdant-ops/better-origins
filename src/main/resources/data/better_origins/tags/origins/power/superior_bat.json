@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "better_origins:bat_flight",
+    "better_origins:bat_flight_time",
+    "better_origins:bat_flight_tick",
+    "better_origins:bat_flight_respawn",
+    "better_origins:bat_flight_speed",
+    "better_origins:bat_flight_hunger",
+    "better_origins:bat_echo",
+    "better_origins:bat_echo_time",
+    "better_origins:bat_echo_tick",
+    "better_origins:bat_echo_respawn",
+    "better_origins:bat_night_vision",
+    "better_origins:bat_night_speed",
+    "better_origins:bat_soft_fall",
+    "better_origins:bat_frailty",
+    "better_origins:phantom_sunburn",
+    "better_origins:bat_sun_weakness",
+    "better_origins:bat_fragile_flight",
+    "better_origins:bat_flight_sprint"
+  ]
+}

@@ -49,5 +49,35 @@
     "sounds": [
       "better_origins:fireball_spit"
     ]
+  },
+  "bat_echo_on": {
+    "subtitle": "subtitles.better_origins.bat_echo_on",
+    "sounds": [
+      "better_origins:bat_echo_on"
+    ]
+  },
+  "bat_echo_loop": {
+    "subtitle": "subtitles.better_origins.bat_echo_loop",
+    "sounds": [
+      "better_origins:bat_echo_loop"
+    ]
+  },
+  "bat_echo_off": {
+    "subtitle": "subtitles.better_origins.bat_echo_off",
+    "sounds": [
+      "better_origins:bat_echo_off"
+    ]
+  },
+  "bat_takeoff": {
+    "subtitle": "subtitles.better_origins.bat_takeoff",
+    "sounds": [
+      "better_origins:bat_takeoff"
+    ]
+  },
+  "bat_dash": {
+    "subtitle": "subtitles.better_origins.bat_dash",
+    "sounds": [
+      "better_origins:bat_dash"
+    ]
   }
 }

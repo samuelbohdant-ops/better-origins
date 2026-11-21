@@ -1,0 +1,26 @@
+{
+  "type": "origins:conditioned_attribute",
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:not",
+        "condition": {
+          "type": "origins:daytime"
+        }
+      },
+      {
+        "type": "origins:dimension",
+        "dimension": "minecraft:overworld",
+        "inverted": true
+      }
+    ]
+  },
+  "modifier": [
+    {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "add_multiplied_base",
+      "value": 0.15
+    }
+  ]
+}

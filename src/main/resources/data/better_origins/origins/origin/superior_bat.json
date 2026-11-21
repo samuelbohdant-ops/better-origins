@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#better_origins:superior_bat"
+  ],
+  "icon": {
+    "id": "better_origins:bat_wing_emblem"
+  },
+  "order": 1,
+  "impact": 3
+}
