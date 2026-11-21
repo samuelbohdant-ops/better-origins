@@ -1,0 +1,23 @@
+{
+  "type": "origins:conditioned_attribute",
+  "modifier": [
+    {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "add_multiplied_base",
+      "value": 1.3
+    }
+  ],
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:power_active",
+        "power": "better_origins:rr_dash"
+      },
+      {
+        "type": "origins:sprinting"
+      }
+    ]
+  },
+  "hidden": true
+}

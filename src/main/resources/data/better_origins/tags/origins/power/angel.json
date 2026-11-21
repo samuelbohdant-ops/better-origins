@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "better_origins:angel_night_vision",
+    "better_origins:angel_grace",
+    "better_origins:angel_frailty",
+    "better_origins:angel_soft_fall",
+    "better_origins:angel_soft_fall_effect",
+    "better_origins:angel_selfish",
+    "better_origins:angel_altruist",
+    "better_origins:angel_blessing_menu",
+    "better_origins:angel_time",
+    "better_origins:angel_cooldown",
+    "better_origins:angel_was_on",
+    "better_origins:angel_tick",
+    "better_origins:angel_respawn"
+  ]
+}

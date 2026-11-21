@@ -1,0 +1,12 @@
+{
+  "type": "origins:modify_exhaustion",
+  "hidden": true,
+  "modifier": {
+    "value": 3.0,
+    "operation": "multiply_total_multiplicative"
+  },
+  "condition": {
+    "type": "origins:power_active",
+    "power": "better_origins:rr_dash"
+  }
+}

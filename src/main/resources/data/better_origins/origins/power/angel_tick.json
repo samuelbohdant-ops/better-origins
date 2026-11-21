@@ -1,0 +1,205 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 1,
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:if_else_list",
+    "actions": [
+      {
+        "condition": {
+          "type": "origins:resource",
+          "resource": "better_origins:angel_cooldown",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        "action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:if_else",
+              "condition": {
+                "type": "origins:power_active",
+                "power": "better_origins:angel_selfish"
+              },
+              "if_action": {
+                "type": "origins:toggle",
+                "power": "better_origins:angel_selfish"
+              }
+            },
+            {
+              "type": "origins:if_else",
+              "condition": {
+                "type": "origins:power_active",
+                "power": "better_origins:angel_altruist"
+              },
+              "if_action": {
+                "type": "origins:toggle",
+                "power": "better_origins:angel_altruist"
+              }
+            },
+            {
+              "type": "origins:change_resource",
+              "resource": "better_origins:angel_cooldown",
+              "change": -1
+            },
+            {
+              "type": "origins:if_else",
+              "condition": {
+                "type": "origins:resource",
+                "resource": "better_origins:angel_time",
+                "comparison": "<",
+                "compare_to": 600
+              },
+              "if_action": {
+                "type": "origins:change_resource",
+                "resource": "better_origins:angel_time",
+                "change": 1
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:or",
+              "conditions": [
+                {
+                  "type": "origins:power_active",
+                  "power": "better_origins:angel_selfish"
+                },
+                {
+                  "type": "origins:power_active",
+                  "power": "better_origins:angel_altruist"
+                }
+              ]
+            },
+            {
+              "type": "origins:resource",
+              "resource": "better_origins:angel_time",
+              "comparison": "<=",
+              "compare_to": 0
+            }
+          ]
+        },
+        "action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:if_else",
+              "condition": {
+                "type": "origins:power_active",
+                "power": "better_origins:angel_selfish"
+              },
+              "if_action": {
+                "type": "origins:toggle",
+                "power": "better_origins:angel_selfish"
+              }
+            },
+            {
+              "type": "origins:if_else",
+              "condition": {
+                "type": "origins:power_active",
+                "power": "better_origins:angel_altruist"
+              },
+              "if_action": {
+                "type": "origins:toggle",
+                "power": "better_origins:angel_altruist"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:power_active",
+              "power": "better_origins:angel_selfish"
+            },
+            {
+              "type": "origins:power_active",
+              "power": "better_origins:angel_altruist"
+            }
+          ]
+        },
+        "action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:if_else",
+              "condition": {
+                "type": "origins:power_active",
+                "power": "better_origins:angel_selfish"
+              },
+              "if_action": {
+                "type": "origins:change_resource",
+                "resource": "better_origins:angel_time",
+                "change": -1
+              }
+            },
+            {
+              "type": "origins:if_else",
+              "condition": {
+                "type": "origins:power_active",
+                "power": "better_origins:angel_altruist"
+              },
+              "if_action": {
+                "type": "origins:change_resource",
+                "resource": "better_origins:angel_time",
+                "change": -1
+              }
+            },
+            {
+              "type": "origins:change_resource",
+              "resource": "better_origins:angel_was_on",
+              "change": 1,
+              "operation": "set"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:resource",
+          "resource": "better_origins:angel_was_on",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        "action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:change_resource",
+              "resource": "better_origins:angel_cooldown",
+              "change": 600,
+              "operation": "set"
+            },
+            {
+              "type": "origins:change_resource",
+              "resource": "better_origins:angel_was_on",
+              "change": 0,
+              "operation": "set"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:resource",
+          "resource": "better_origins:angel_time",
+          "comparison": "<",
+          "compare_to": 600
+        },
+        "action": {
+          "type": "origins:change_resource",
+          "resource": "better_origins:angel_time",
+          "change": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#better_origins:cave_worm"
+  ],
+  "icon": {
+    "id": "better_origins:cave_worm_emblem"
+  },
+  "order": 2,
+  "impact": 2
+}

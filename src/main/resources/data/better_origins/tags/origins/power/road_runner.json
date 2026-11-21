@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "better_origins:rr_dash",
+    "better_origins:rr_dash_time",
+    "better_origins:rr_dash_tick",
+    "better_origins:rr_dash_respawn",
+    "better_origins:rr_swift_legs",
+    "better_origins:rr_dash_walk",
+    "better_origins:rr_dash_sprint",
+    "better_origins:rr_dash_step",
+    "better_origins:rr_metabolism",
+    "better_origins:rr_dash_hunger",
+    "better_origins:rr_dash_burn",
+    "better_origins:rr_frailty",
+    "better_origins:rr_impact",
+    "better_origins:rr_stun"
+  ]
+}

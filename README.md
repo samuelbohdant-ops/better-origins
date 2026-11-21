@@ -17,6 +17,8 @@ add new origins.
 - **Reworked origins:** Merling, Blazeborn, Elytrian, Enderian, Arachnid, Shulk, Phantom and Feline have new
   abilities, buffs and weaknesses (kin mobs, fireball, web throw, levitation burst, floating, spectral form,
   shadow veil, pounce and more).
+- **New origins:** Road Runner (super speed, stuns), Cave Worm (miner, toxic parasites) and Angel (blessings for
+  itself or for everyone nearby).
 - **New origin:** Superior Bat: flies at night, sees mobs and players through walls with Echolocation, burns in
   the sun.
 - **New origin:** The Perfect Human, with the Adrenaline ability (own sounds, firework burst and red screen effect).

@@ -1,0 +1,19 @@
+{
+  "type": "origins:modify_healing",
+  "modifier": {
+    "value": -0.2,
+    "operation": "multiply_total_multiplicative"
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:dimension",
+        "dimension": "minecraft:overworld"
+      },
+      {
+        "type": "origins:exposed_to_sky"
+      }
+    ]
+  }
+}

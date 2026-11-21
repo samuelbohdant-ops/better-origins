@@ -1,0 +1,15 @@
+{
+  "type": "origins:action_on_callback",
+  "hidden": true,
+  "entity_action_respawned": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:change_resource",
+        "resource": "better_origins:rr_dash_time",
+        "change": 600,
+        "operation": "set"
+      }
+    ]
+  }
+}

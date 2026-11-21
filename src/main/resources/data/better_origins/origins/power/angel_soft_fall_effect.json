@@ -1,0 +1,13 @@
+{
+  "type": "origins:modify_falling",
+  "hidden": true,
+  "take_fall_damage": false,
+  "modifier": {
+    "value": -0.2,
+    "operation": "multiply_total_multiplicative"
+  },
+  "condition": {
+    "type": "origins:power_active",
+    "power": "better_origins:angel_soft_fall"
+  }
+}

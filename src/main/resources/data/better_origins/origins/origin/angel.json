@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#better_origins:angel"
+  ],
+  "icon": {
+    "id": "better_origins:angel_emblem"
+  },
+  "order": 2,
+  "impact": 3
+}

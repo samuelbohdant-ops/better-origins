@@ -1,0 +1,30 @@
+{
+  "type": "origins:conditioned_attribute",
+  "modifier": [
+    {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "add_multiplied_total",
+      "value": -0.25
+    }
+  ],
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:dimension",
+            "dimension": "minecraft:overworld"
+          },
+          {
+            "type": "origins:exposed_to_sky"
+          }
+        ]
+      },
+      {
+        "type": "origins:sprinting"
+      }
+    ]
+  }
+}

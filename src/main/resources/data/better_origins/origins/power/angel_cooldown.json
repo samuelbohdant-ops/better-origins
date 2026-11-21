@@ -1,0 +1,12 @@
+{
+  "type": "origins:resource",
+  "min": 0,
+  "max": 600,
+  "start_value": 0,
+  "hidden": true,
+  "hud_render": {
+    "sprite_location": "better_origins:textures/gui/power_bars.png",
+    "bar_index": 9,
+    "order": 6
+  }
+}

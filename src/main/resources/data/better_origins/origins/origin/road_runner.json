@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#better_origins:road_runner"
+  ],
+  "icon": {
+    "id": "better_origins:road_runner_emblem"
+  },
+  "order": 2,
+  "impact": 1
+}

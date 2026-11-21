@@ -58,6 +58,7 @@ public enum HudRenderOverlay implements LayeredDraw.Layer {
             graphics.blit(currentLocation, x, y - 2, 0, v, w, barHeight);
             // this.setBlitOffset(this.getBlitOffset() + 1);
             graphics.blit(currentLocation, x - iconSize - 2, y - 2, 73, v, iconSize, iconSize);
+            com.betterorigins.AngelClient.afterBar(graphics, currentLocation, render.barIndex(), x, y, barWidth); // Better Origins: Angel blessing icons
             // this.setBlitOffset(this.getBlitOffset() - 1);
             y -= 8;
         }

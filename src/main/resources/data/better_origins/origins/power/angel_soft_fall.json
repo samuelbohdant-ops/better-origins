@@ -1,0 +1,9 @@
+{
+  "type": "origins:toggle",
+  "key": {
+    "key": "key.better_origins.ternary_active",
+    "continuous": false
+  },
+  "active_by_default": false,
+  "retain_state": false
+}

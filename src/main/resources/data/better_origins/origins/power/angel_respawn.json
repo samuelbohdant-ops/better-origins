@@ -1,0 +1,27 @@
+{
+  "type": "origins:action_on_callback",
+  "hidden": true,
+  "entity_action_respawned": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:change_resource",
+        "resource": "better_origins:angel_time",
+        "change": 600,
+        "operation": "set"
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "better_origins:angel_cooldown",
+        "change": 0,
+        "operation": "set"
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "better_origins:angel_was_on",
+        "change": 0,
+        "operation": "set"
+      }
+    ]
+  }
+}

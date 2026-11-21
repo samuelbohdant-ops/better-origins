@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "better_origins:cw_surface_mining",
+    "better_origins:cw_deep_mining",
+    "better_origins:cw_surface_sluggish",
+    "better_origins:cw_deep_speed",
+    "better_origins:cw_deep_vision",
+    "better_origins:cw_surface_healing",
+    "better_origins:cw_deep_healing",
+    "better_origins:cw_prospector",
+    "better_origins:cw_frailty",
+    "better_origins:cw_parasites",
+    "better_origins:cw_parasites_time",
+    "better_origins:cw_parasites_cooldown",
+    "better_origins:cw_parasites_was_on",
+    "better_origins:cw_parasites_tick",
+    "better_origins:cw_parasites_respawn"
+  ]
+}

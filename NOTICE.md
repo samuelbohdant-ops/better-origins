@@ -15,7 +15,8 @@ Origins was originally created by Apace (MIT), ported to Forge by EdwinMindcraft
 All of these were made for this project and are distributed under the same license as the mod:
 
 - Mod logo (drawing by Samulele_borsuk; the Orb of Origin texture comes from Origins).
-- Perfect Human Emblem, Feline Emblem and Bat Wing Emblem icons, origin menu backgrounds, ability bar textures and icons,
+- Perfect Human, Feline, Bat Wing, Road Runner, Cave Worm and Angel emblem icons, status effect icons, Angel
+  blessing icons and menu, origin menu backgrounds, ability bar textures and icons,
   Shulk inventory frame, Adrenaline screen effect.
 - Sounds `adrenaline_activate.ogg`, `adrenaline_crash.ogg`, `elytrian_launch.ogg`, `web_shoot.ogg`, `shulk_force.ogg`,
   `pounce_dash.ogg`, `fireball_spit.ogg`, `bat_echo_on.ogg`, `bat_echo_loop.ogg`, `bat_echo_off.ogg`, `bat_takeoff.ogg` and `bat_dash.ogg`:
