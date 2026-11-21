@@ -18,6 +18,9 @@ All of these were made for this project and are distributed under the same licen
 - Perfect Human, Feline, Bat Wing, Road Runner, Cave Worm and Angel emblem icons, status effect icons, Angel
   blessing icons and menu, origin menu backgrounds, ability bar textures and icons,
   Shulk inventory frame, Adrenaline screen effect.
+- CurseForge page images in `docs/curseforge` (origin and ability banners, including new icons for Merling,
+  Blazeborn, Elytrian, Enderian, Arachnid, Phantom and Shulk drawn for these images; a few ability icons come
+  from the Origins ability bar texture).
 - All sound files except `adrenaline_rush.ogg` (Adrenaline, ability sounds of Elytrian, Arachnid, Shulk, Feline,
   Blazeborn, Superior Bat, Road Runner, Cave Worm and Angel): synthesized from scratch.
 - Sound `adrenaline_rush.ogg`: edited (tempo, length, loop) from a free heartbeat sound effect shared on YouTube for
