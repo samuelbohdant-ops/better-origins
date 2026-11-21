@@ -47,7 +47,7 @@ See [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Versions
 
-Files are named `better_origins-<Minecraft version>-<mod version>.jar`, for example `better_origins-1.21.1-0.8.1.jar`.
+Files are named `better_origins-<Minecraft version>-<mod version>.jar`, for example `better_origins-1.21.1-0.9.2.jar`.
 The mod version follows `MAJOR.MINOR.PATCH`: `0.x.x` while in development, new features raise the middle number,
 fixes raise the last one.
 
