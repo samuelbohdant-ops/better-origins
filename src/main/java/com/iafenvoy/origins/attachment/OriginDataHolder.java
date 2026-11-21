@@ -62,7 +62,10 @@ import java.util.stream.Stream;
 @EventBusSubscriber
 public final class OriginDataHolder {
     public static final ResourceLocation DEFAULT_SOURCE = ResourceLocation.fromNamespaceAndPath(Origins.MOD_ID, "command");
-    private static final Map<Entity, OriginDataHolder> CACHED_HOLDERS = new IdentityHashMap<>();
+    // Better Origins: one cache per thread (client and server threads in singleplayer no longer share a non thread-safe map)
+    private static final ThreadLocal<Map<Entity, OriginDataHolder>> CACHED_HOLDERS = ThreadLocal.withInitial(IdentityHashMap::new);
+    // Better Origins: changes made every tick (cooldowns, timers) are sent to clients at most every SYNC_INTERVAL ticks
+    private static final int SYNC_INTERVAL = 4;
     private final Entity entity;
     private final EntityOriginAttachment data;
     private final RegistryAccess access;
@@ -304,12 +307,14 @@ public final class OriginDataHolder {
     }
 
     private static OriginDataHolder getCached(Entity entity) {
-        return CACHED_HOLDERS.computeIfAbsent(entity, x -> new OriginDataHolder(x, x.getData(OriginsAttachments.ENTITY_ORIGIN)));
+        Map<Entity, OriginDataHolder> cache = CACHED_HOLDERS.get();
+        if (cache.size() > 8192) cache.clear(); // safety net for threads whose cache is never cleared by a tick event
+        return cache.computeIfAbsent(entity, x -> new OriginDataHolder(x, x.getData(OriginsAttachments.ENTITY_ORIGIN)));
     }
 
     @ApiStatus.Internal
     public static void clearCache() {
-        CACHED_HOLDERS.clear();
+        CACHED_HOLDERS.get().clear();
     }
 
     public static Stream<OriginDataHolder> optionalStream(@Nullable Entity entity) {
@@ -322,6 +327,8 @@ public final class OriginDataHolder {
 
     //Ticking
     public void sync() {
+        this.data.pendingSync = false;
+        this.data.lastSyncTick = Proxies.TICK_COUNT.getAsLong();
         this.entity.syncData(OriginsAttachments.ENTITY_ORIGIN);
     }
 
@@ -336,17 +343,22 @@ public final class OriginDataHolder {
         //Update components
         boolean changed = false;
         for (PowerHolder power : this.cachedPowers)
-            for (Map.Entry<Class<? extends PowerComponent>, PowerComponent> entry : this.data.getComponents().getOrDefault(power.id(), new LinkedHashMap<>()).entrySet()) {
+            for (Map.Entry<Class<? extends PowerComponent>, PowerComponent> entry : this.data.getComponents().getOrDefault(power.id(), Collections.emptyMap()).entrySet()) {
                 PowerComponent component = entry.getValue();
                 component.tick(this, power);
                 if (component.isDirty()) changed = true;
             }
-        if (changed) this.sync();
+        if (changed) this.data.pendingSync = true;
+        // first change after a quiet moment is sent at once; continuous changes at most every SYNC_INTERVAL ticks
+        if (this.data.pendingSync && (currentTick - this.data.lastSyncTick >= SYNC_INTERVAL || currentTick < this.data.lastSyncTick))
+            this.sync();
     }
 
     @ApiStatus.Internal
     @SubscribeEvent
     public static void onEntityTick(EntityTickEvent.Post event) {
+        // Better Origins: entities that never got origin data (most mobs, items, arrows...) have no powers to tick
+        if (!event.getEntity().hasData(OriginsAttachments.ENTITY_ORIGIN)) return;
         OriginDataHolder.optional(event.getEntity()).ifPresent(OriginDataHolder::tick);
     }
 

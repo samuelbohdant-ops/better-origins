@@ -38,6 +38,9 @@ public final class EntityOriginAttachment {
     private final Map<ResourceLocation, ResourceLocation> unresolvedOrigins = new LinkedHashMap<>();
     private final Multimap<ResourceLocation, ResourceLocation> unresolvedPowers = HashMultimap.create();
     private boolean selecting = false;
+    // Better Origins: sync throttling state (not saved, not sent)
+    long lastSyncTick = -1_000_000L;
+    boolean pendingSync = false;
 
     public EntityOriginAttachment() {
     }

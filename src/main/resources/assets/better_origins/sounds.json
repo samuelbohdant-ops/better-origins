@@ -19,5 +19,35 @@
     "sounds": [
       "better_origins:adrenaline_crash"
     ]
+  },
+  "elytrian_launch": {
+    "subtitle": "subtitles.better_origins.elytrian_launch",
+    "sounds": [
+      "better_origins:elytrian_launch"
+    ]
+  },
+  "web_shoot": {
+    "subtitle": "subtitles.better_origins.web_shoot",
+    "sounds": [
+      "better_origins:web_shoot"
+    ]
+  },
+  "shulk_force": {
+    "subtitle": "subtitles.better_origins.shulk_force",
+    "sounds": [
+      "better_origins:shulk_force"
+    ]
+  },
+  "pounce_dash": {
+    "subtitle": "subtitles.better_origins.pounce_dash",
+    "sounds": [
+      "better_origins:pounce_dash"
+    ]
+  },
+  "fireball_spit": {
+    "subtitle": "subtitles.better_origins.fireball_spit",
+    "sounds": [
+      "better_origins:fireball_spit"
+    ]
   }
 }

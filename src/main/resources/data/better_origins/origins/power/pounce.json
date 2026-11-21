@@ -14,6 +14,13 @@
     "type": "origins:and",
     "actions": [
       {
+        "type": "origins:play_sound",
+        "sound": "better_origins:pounce_dash",
+        "category": "players",
+        "volume": 0.9,
+        "pitch": 1.0
+      },
+      {
         "type": "origins:add_velocity",
         "z": 1.6,
         "y": 0.2,

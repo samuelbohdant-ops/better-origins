@@ -29,7 +29,7 @@
           0.5
         ],
         "offset_y": 0.8,
-        "force": true
+        "force": false
       },
       {
         "type": "origins:spawn_particles",
@@ -41,7 +41,7 @@
           0.3
         ],
         "offset_y": 0.7,
-        "force": true
+        "force": false
       },
       {
         "type": "origins:change_resource",

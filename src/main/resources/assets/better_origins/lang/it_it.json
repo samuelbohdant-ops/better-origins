@@ -100,5 +100,10 @@
   "better_origins.gui.section.standard": "Standard",
   "better_origins.gui.section.low": "Impatto basso",
   "better_origins.gui.section.medium": "Impatto medio",
-  "better_origins.gui.section.high": "Impatto alto"
+  "better_origins.gui.section.high": "Impatto alto",
+  "subtitles.better_origins.elytrian_launch": "Raffica di vento",
+  "subtitles.better_origins.web_shoot": "Ragnatela sparata",
+  "subtitles.better_origins.shulk_force": "Onda di levitazione",
+  "subtitles.better_origins.pounce_dash": "Balzo felino",
+  "subtitles.better_origins.fireball_spit": "Palla di fuoco sputata"
 }

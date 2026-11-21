@@ -9,9 +9,15 @@
   "entity_type": "minecraft:small_fireball",
   "speed": 1.5,
   "divergence": 0,
-  "sound": "minecraft:entity.blaze.shoot",
   "key": {
     "key": "key.origins.primary_active",
     "continuous": false
+  },
+  "shooter_action": {
+    "type": "origins:play_sound",
+    "sound": "better_origins:fireball_spit",
+    "category": "players",
+    "volume": 0.9,
+    "pitch": 1.0
   }
 }

@@ -72,7 +72,8 @@ public class LaunchPower extends HasCooldownPower implements Toggleable {
             if (entity.level() instanceof ServerLevel serverLevel) {
                 entity.push(0, this.speed, 0);
                 entity.hurtMarked = true;
-                this.sound.ifPresent(s -> serverLevel.playSound(null, entity.getX(), entity.getY(), entity.getZ(), s, SoundSource.NEUTRAL, 0.5F, 0.4F / (entity.level().random.nextFloat() * 0.4F + 0.8F)));
+                // Better Origins: the sound follows the launched entity (it used to stay on the ground and was too far away to hear)
+                this.sound.ifPresent(s -> serverLevel.playSound(null, entity, s, SoundSource.NEUTRAL, 0.5F, 0.4F / (entity.level().random.nextFloat() * 0.4F + 0.8F)));
                 for (int i = 0; i < 4; ++i)
                     serverLevel.sendParticles(ParticleTypes.CLOUD, entity.getX(), entity.getRandomY(), entity.getZ(), 8, entity.level().random.nextGaussian(), 0.0D, entity.level().random.nextGaussian(), 0.5);
             }

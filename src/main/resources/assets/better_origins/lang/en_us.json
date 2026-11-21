@@ -100,5 +100,10 @@
   "better_origins.gui.section.standard": "Standard",
   "better_origins.gui.section.low": "Low impact",
   "better_origins.gui.section.medium": "Medium impact",
-  "better_origins.gui.section.high": "High impact"
+  "better_origins.gui.section.high": "High impact",
+  "subtitles.better_origins.elytrian_launch": "Gust of wind",
+  "subtitles.better_origins.web_shoot": "Web shot",
+  "subtitles.better_origins.shulk_force": "Levitation wave",
+  "subtitles.better_origins.pounce_dash": "Feline leaps",
+  "subtitles.better_origins.fireball_spit": "Fireball spat"
 }

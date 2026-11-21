@@ -28,9 +28,15 @@
       }
     ]
   },
-  "sound": "minecraft:entity.snowball.throw",
   "key": {
     "key": "key.origins.secondary_active",
     "continuous": false
+  },
+  "shooter_action": {
+    "type": "origins:play_sound",
+    "sound": "better_origins:web_shoot",
+    "category": "players",
+    "volume": 1.0,
+    "pitch": 1.0
   }
 }

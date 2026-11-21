@@ -15,12 +15,17 @@ add new origins.
 - **Reworked origins:** Merling, Blazeborn, Elytrian, Enderian, Arachnid, Shulk, Phantom and Feline have new
   abilities, buffs and weaknesses (kin mobs, fireball, web throw, levitation burst, floating, spectral form,
   shadow veil, pounce and more).
-- **New origin:** The Perfect Human, with the Adrenaline ability.
+- **New origin:** The Perfect Human, with the Adrenaline ability (own sounds, firework burst and red screen effect).
+- **Elytrian Wind Charge:** throw up to 3 Breeze wind charges, each recharging in 10 seconds.
+- **New origin menu:** origins grouped by impact (Standard, Low, Medium, High) with a coloured background for each
+  origin; new icons and ability bars.
 - **Removed origin:** Avian.
 - **New enchantments:** Sun Protection and Evolved Gills (helmets only).
 - **Up to 5 ability keys** (primary G, secondary H, third N, fourth `,`, fifth `.`), all rebindable.
 - **Fixes:** origin bonuses no longer stay on the player after changing origin; ability cooldowns reset when you
   respawn; Origins' broken Claustrophobia power file is fixed.
+- **Performance:** ability data is sent to clients less often while cooldowns and timers run, entities without
+  origins are skipped every tick, and the client and server no longer share an unsafe cache in singleplayer.
 - **No extra mods needed:** the configuration uses NeoForge's own config system
   (`config/origins-common.toml`, also editable in game from the mod list).
 
@@ -47,3 +52,4 @@ Included libraries: Additional Entity Attributes, Caelus API, Integration.
 Better Origins is a modified version of Origins (NeoForge) and is distributed under the
 **GNU Lesser General Public License v3.0** — see [`LICENSE`](LICENSE).
 The full source code of every published version is available in this repository.
+See [`NOTICE.md`](NOTICE.md) for the copyright notice of the changes and the origin of the assets.
