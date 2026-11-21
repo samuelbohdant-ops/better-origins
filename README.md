@@ -1,3 +1,5 @@
+<p align="center"><img src="src/main/resources/logo.png" alt="Better Origins logo" width="256"></p>
+
 # Better Origins (NeoForge 1.21.1)
 
 **Alpha** — things may still change between versions.
@@ -31,6 +33,10 @@ add new origins.
   client and server no longer share an unsafe cache in singleplayer.
 - **No extra mods needed:** the configuration uses NeoForge's own config system
   (`config/origins-common.toml`, also editable in game from the mod list).
+
+## Changelog
+
+See [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Requirements
 
