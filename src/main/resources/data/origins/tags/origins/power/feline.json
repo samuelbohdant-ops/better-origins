@@ -8,6 +8,8 @@
     "origins:scare_creepers",
     "better_origins:nocturnal",
     "better_origins:feline_sprint",
-    "better_origins:pounce"
+    "better_origins:pounce",
+    "better_origins:pounce_trail",
+    "better_origins:pounce_trail_tick"
   ]
 }

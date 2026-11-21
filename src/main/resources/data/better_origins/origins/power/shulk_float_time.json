@@ -4,8 +4,8 @@
   "max": 300,
   "start_value": 300,
   "hud_render": {
-    "sprite_location": "origins:textures/gui/resource_bar.png",
-    "bar_index": 0,
+    "sprite_location": "better_origins:textures/gui/power_bars.png",
+    "bar_index": 1,
     "order": 5
   },
   "hidden": true

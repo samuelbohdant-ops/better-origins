@@ -41,7 +41,8 @@ import java.util.UUID;
  * It reads the "better_origins:adrenaline_timer" resource that Origins already syncs to every client:
  *   0 = ready, 2400..1801 = Adrenaline (30 s), 1800..1 = crash (90 s).
  * - Timer jumps up to ~2400 on any nearby player -> black & red firework burst + smoke around them (everyone sees it).
- * - The local player: red fog at the screen edges for the length of the activation sound (2.4 s),
+ * - The local player: red fog at the screen edges for the whole 30 s, full while the activation sound plays (2.4 s)
+ *   then slowly fading until Adrenaline ends;
  *   the heartbeat loop during the 30 s, the crash sound when the crash starts.
  * The activation sound itself is played by the server (adrenaline power in the data), so nearby players hear it.
  */
@@ -50,7 +51,7 @@ public final class AdrenalineClient {
     private static final ResourceLocation TIMER_POWER = ResourceLocation.fromNamespaceAndPath(BetterOriginsIds.CONTENT_NS, "adrenaline_timer");
     private static final ResourceLocation VIGNETTE = ResourceLocation.fromNamespaceAndPath(BetterOriginsIds.CONTENT_NS, "textures/gui/adrenaline_vignette.png");
     private static final int ACTIVE_ABOVE = 1800;          // timer > 1800 = Adrenaline
-    private static final float VIGNETTE_SECONDS = 2.4F;    // same length as adrenaline_activate.ogg
+    private static final float VIGNETTE_SECONDS = 2.4F;    // full strength while adrenaline_activate.ogg plays
     private static final int RED = 0xB3312C;               // firework red (red dye)
     private static final int DARK_RED = 0x5A0E0E;
     private static final int BLACK = 0x1D1D21;             // firework black (black dye)
@@ -169,16 +170,20 @@ public final class AdrenalineClient {
 
     private static void renderVignette(GuiGraphics graphics, DeltaTracker deltaTracker) {
         if (vignetteStart < 0) return;
-        float t = (System.nanoTime() - vignetteStart) / 1_000_000_000F;
-        if (t >= VIGNETTE_SECONDS) {
+        Player self = Minecraft.getInstance().player;
+        int timer = self == null ? -1 : timerOf(self);
+        if (timer <= ACTIVE_ABOVE || self == null || !self.isAlive()) {   // Adrenaline over: fog gone
             vignetteStart = -1;
             return;
         }
+        float t = (System.nanoTime() - vignetteStart) / 1_000_000_000F;
+        // remaining part of the 30 s (1 at the start -> 0 when Adrenaline ends), smoothed between ticks
+        float remaining = Mth.clamp((timer - ACTIVE_ABOVE - deltaTracker.getGameTimeDeltaPartialTick(false)) / (float) (2400 - ACTIVE_ABOVE), 0F, 1F);
         float alpha;
-        if (t < 0.15F) alpha = t / 0.15F;                                          // quick fade in
-        else if (t > VIGNETTE_SECONDS - 0.8F) alpha = (VIGNETTE_SECONDS - t) / 0.8F; // slow fade out
-        else alpha = 1F;
-        alpha *= 0.85F + 0.15F * Mth.sin(t * 9F);                                  // light pulse
+        if (t < 0.15F) alpha = t / 0.15F;                                   // quick fade in
+        else if (t < VIGNETTE_SECONDS) alpha = 1F;                          // full while the activation sound plays
+        else alpha = remaining * remaining * (3F - 2F * remaining);         // then slowly fades away over the 30 s
+        alpha *= 0.85F + 0.15F * Mth.sin(t * 9F * (0.4F + 0.6F * remaining)); // pulse, slowing down with the heartbeat
         int width = graphics.guiWidth();
         int height = graphics.guiHeight();
         RenderSystem.disableDepthTest();

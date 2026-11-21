@@ -1,11 +1,6 @@
 {
   "type": "origins:fire_projectile",
   "cooldown": 10,
-  "hud_render": {
-    "sprite_location": "origins:textures/gui/resource_bar.png",
-    "bar_index": 1,
-    "order": 7
-  },
   "condition": {
     "type": "origins:resource",
     "resource": "better_origins:wind_charges",

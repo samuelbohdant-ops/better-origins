@@ -40,7 +40,7 @@
   "power.better_origins.large_appetite.name": "Grande appetito",
   "power.better_origins.large_appetite.description": "Ti viene fame un po' più in fretta degli altri.",
   "power.better_origins.levitation_burst.name": "Esplosione di levitazione",
-  "power.better_origins.levitation_burst.description": "Fai levitare per 3 secondi mob e giocatori entro 5 blocchi, tranne gli Shulk e gli animali domestici. Ricarica 8 secondi.",
+  "power.better_origins.levitation_burst.description": "Fai levitare per 3 secondi mob e giocatori entro 5 blocchi, tranne Shulk e animali domestici; l'area si illumina di viola. Ricarica 8 secondi.",
   "power.better_origins.shulker_shell.name": "Guscio di shulker",
   "power.better_origins.shulker_shell.description": "I proiettili degli shulker non ti fanno nulla.",
   "power.better_origins.shulk_float.name": "Fluttuare",
@@ -66,7 +66,7 @@
   "power.better_origins.feline_sprint.name": "Corsa felina",
   "power.better_origins.feline_sprint.description": "Quando corri sei il 30% più veloce.",
   "power.better_origins.pounce.name": "Balzo",
-  "power.better_origins.pounce.description": "Scatti con forza nella direzione in cui guardi. Ricarica 3 secondi, costa un po' di fame.",
+  "power.better_origins.pounce.description": "Scatti con forza nella direzione in cui guardi, lasciando una scia bianca dietro di te. Ricarica 3 secondi, costa un po' di fame.",
   "power.better_origins.perfect_heart.name": "Cuore forte",
   "power.better_origins.perfect_heart.description": "Hai 11 cuori invece di 10. Questo bonus resta sempre.",
   "power.better_origins.perfect_body.name": "Corpo perfetto",
@@ -95,5 +95,10 @@
   "subtitles.better_origins.adrenaline_crash": "L'adrenalina svanisce",
   "item.better_origins.perfect_human_emblem": "Emblema dell'Umano Perfetto",
   "power.better_origins.wind_charge.name": "Carica di vento",
-  "power.better_origins.wind_charge.description": "Lanci una carica di vento della Breeze nella direzione in cui guardi. Ne tieni fino a 3: le lanci una alla volta (ricarica 0,5 secondi); ogni carica usata si ricarica in 10 secondi, una dopo l'altra."
+  "power.better_origins.wind_charge.description": "Lanci una carica di vento della Breeze nella direzione in cui guardi. Ne tieni fino a 3 e puoi lanciarle una dopo l'altra; ogni carica usata si ricarica in 10 secondi, una alla volta.",
+  "item.better_origins.feline_emblem": "Emblema del Felino",
+  "better_origins.gui.section.standard": "Standard",
+  "better_origins.gui.section.low": "Impatto basso",
+  "better_origins.gui.section.medium": "Impatto medio",
+  "better_origins.gui.section.high": "Impatto alto"
 }

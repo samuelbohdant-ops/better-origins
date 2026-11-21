@@ -40,7 +40,7 @@
   "power.better_origins.large_appetite.name": "Large Appetite",
   "power.better_origins.large_appetite.description": "You get hungry a little faster than others.",
   "power.better_origins.levitation_burst.name": "Levitation Burst",
-  "power.better_origins.levitation_burst.description": "Make mobs and players within 5 blocks levitate for 3 seconds, except Shulk and pets. 8 second cooldown.",
+  "power.better_origins.levitation_burst.description": "Make mobs and players within 5 blocks levitate for 3 seconds, except Shulk and pets; the area lights up purple. 8 second cooldown.",
   "power.better_origins.shulker_shell.name": "Shulker Shell",
   "power.better_origins.shulker_shell.description": "Shulker bullets don't affect you.",
   "power.better_origins.shulk_float.name": "Float",
@@ -66,7 +66,7 @@
   "power.better_origins.feline_sprint.name": "Feline Sprint",
   "power.better_origins.feline_sprint.description": "You are 30% faster while sprinting.",
   "power.better_origins.pounce.name": "Pounce",
-  "power.better_origins.pounce.description": "Leap forcefully where you are looking. 3 second cooldown, costs a little hunger.",
+  "power.better_origins.pounce.description": "Leap forcefully where you are looking, leaving a white trail behind you. 3 second cooldown, costs a little hunger.",
   "power.better_origins.perfect_heart.name": "Strong Heart",
   "power.better_origins.perfect_heart.description": "You have 11 hearts instead of 10. This bonus is always kept.",
   "power.better_origins.perfect_body.name": "Perfect Body",
@@ -95,5 +95,10 @@
   "subtitles.better_origins.adrenaline_crash": "Adrenaline fades",
   "item.better_origins.perfect_human_emblem": "Perfect Human Emblem",
   "power.better_origins.wind_charge.name": "Wind Charge",
-  "power.better_origins.wind_charge.description": "Throw a Breeze's wind charge where you are looking. You store up to 3: throw them one at a time (0.5 second cooldown); each used charge recharges in 10 seconds, one after the other."
+  "power.better_origins.wind_charge.description": "Throw a Breeze's wind charge where you are looking. You store up to 3 and can throw them one after another; each used charge recharges in 10 seconds, one at a time.",
+  "item.better_origins.feline_emblem": "Feline Emblem",
+  "better_origins.gui.section.standard": "Standard",
+  "better_origins.gui.section.low": "Low impact",
+  "better_origins.gui.section.medium": "Medium impact",
+  "better_origins.gui.section.high": "High impact"
 }

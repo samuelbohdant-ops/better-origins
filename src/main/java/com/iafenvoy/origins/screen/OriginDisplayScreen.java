@@ -198,7 +198,17 @@ public class OriginDisplayScreen extends Screen {
         }
 
         graphics.blitSprite(WINDOW_BORDER, this.guiLeft, this.guiTop, 2, WINDOW_WIDTH, WINDOW_HEIGHT);
-        graphics.blitSprite(WINDOW_NAME_PLATE, this.guiLeft + 10, this.guiTop + 10, 2, 150, 26);
+        // Better Origins: coloured name strip for origins that have a style texture
+        java.util.Optional<ResourceLocation> plate = this.origin == null || this.isOriginRandom || this.origin.getKey() == null
+                ? java.util.Optional.empty() : com.betterorigins.OriginStyles.plate(this.origin.getKey().location());
+        if (plate.isPresent()) {
+            graphics.pose().pushPose();
+            graphics.pose().translate(0, 0, 2);
+            com.mojang.blaze3d.systems.RenderSystem.enableBlend();
+            graphics.blit(plate.get(), this.guiLeft + 10, this.guiTop + 10, 0, 0, 150, 26, 150, 26);
+            com.mojang.blaze3d.systems.RenderSystem.disableBlend();
+            graphics.pose().popPose();
+        } else graphics.blitSprite(WINDOW_NAME_PLATE, this.guiLeft + 10, this.guiTop + 10, 2, 150, 26);
 
         if (this.origin != null) {
             graphics.pose().pushPose();

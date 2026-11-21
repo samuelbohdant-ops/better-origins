@@ -11,52 +11,165 @@
     "continuous": false
   },
   "entity_action": {
-    "type": "origins:selector_action",
-    "selector": "@e[distance=0.1..5]",
-    "bientity_condition": {
-      "type": "origins:target_condition",
-      "condition": {
-        "type": "origins:and",
-        "conditions": [
-          {
-            "type": "origins:living"
-          },
-          {
-            "type": "origins:not",
-            "condition": {
-              "type": "origins:tamed"
-            }
-          },
-          {
-            "type": "origins:not",
-            "condition": {
-              "type": "origins:nbt",
-              "nbt": {
-                "RedomesticateTamed": true
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:selector_action",
+        "selector": "@e[distance=0.1..5]",
+        "bientity_condition": {
+          "type": "origins:target_condition",
+          "condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:living"
+              },
+              {
+                "type": "origins:not",
+                "condition": {
+                  "type": "origins:tamed"
+                }
+              },
+              {
+                "type": "origins:not",
+                "condition": {
+                  "type": "origins:nbt",
+                  "nbt": {
+                    "RedomesticateTamed": true
+                  }
+                }
+              },
+              {
+                "type": "origins:not",
+                "condition": {
+                  "type": "origins:origin",
+                  "origin": "origins:shulk",
+                  "layer": "origins:origin"
+                }
               }
-            }
-          },
-          {
-            "type": "origins:not",
-            "condition": {
-              "type": "origins:origin",
-              "origin": "origins:shulk",
-              "layer": "origins:origin"
+            ]
+          }
+        },
+        "bientity_action": {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:apply_effect",
+            "effect": {
+              "id": "minecraft:levitation",
+              "duration": 60,
+              "amplifier": 2
             }
           }
-        ]
-      }
-    },
-    "bientity_action": {
-      "type": "origins:target_action",
-      "action": {
-        "type": "origins:apply_effect",
-        "effect": {
-          "id": "minecraft:levitation",
-          "duration": 60,
-          "amplifier": 2
         }
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 0 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 15 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 30 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 45 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 60 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 75 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 90 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 105 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 120 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 135 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 150 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 165 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 180 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 195 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 210 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 225 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 240 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 255 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 270 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 285 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 300 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 315 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 330 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute rotated 345 0 positioned ^ ^0.15 ^5 run particle minecraft:dust{color:[0.78,0.35,1.0],scale:2.0} ~ ~ ~ 0.12 0.04 0.12 0 4 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "particle minecraft:dust{color:[0.6,0.25,0.9],scale:1.6} ~ ~0.1 ~ 2.2 0.02 2.2 0 160 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "particle minecraft:witch ~ ~0.4 ~ 2.4 0.3 2.4 0 40 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "particle minecraft:end_rod ~ ~0.2 ~ 2.4 0.1 2.4 0.03 20 force"
       }
-    }
+    ]
   }
 }

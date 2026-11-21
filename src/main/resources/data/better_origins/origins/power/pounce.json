@@ -23,6 +23,12 @@
       {
         "type": "origins:exhaust",
         "amount": 2.0
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "better_origins:pounce_trail",
+        "change": 7,
+        "operation": "set"
       }
     ]
   }
