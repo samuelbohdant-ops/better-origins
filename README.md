@@ -27,7 +27,8 @@ add new origins.
 - **Fixes:** origin bonuses no longer stay on the player after changing origin; ability cooldowns reset when you
   respawn; Origins' broken Claustrophobia power file is fixed.
 - **Performance:** ability data is sent to clients less often while cooldowns and timers run, entities without
-  origins are skipped every tick, and the client and server no longer share an unsafe cache in singleplayer.
+  origins are skipped every tick and no longer get empty origin data saved and sent to every client, and the
+  client and server no longer share an unsafe cache in singleplayer.
 - **No extra mods needed:** the configuration uses NeoForge's own config system
   (`config/origins-common.toml`, also editable in game from the mod list).
 
@@ -35,6 +36,19 @@ add new origins.
 
 - Minecraft 1.21.1
 - NeoForge 21.1.228 or newer
+
+## Versions
+
+Files are named `better_origins-<Minecraft version>-<mod version>.jar`, for example `better_origins-1.21.1-0.8.1.jar`.
+The mod version follows `MAJOR.MINOR.PATCH`: `0.x.x` while in development, new features raise the middle number,
+fixes raise the last one.
+
+## Server notes
+
+- Install Better Origins on the server **and** on every player's game.
+- The Superior Bat flies: set `allow-flight=true` in `server.properties`, otherwise the server kicks flying players.
+- Fast flyers (Elytrian, Superior Bat) generate new terrain quickly: pre-generating the world (for example with the
+  Chunky mod) avoids lag spikes.
 
 ## Credits
 

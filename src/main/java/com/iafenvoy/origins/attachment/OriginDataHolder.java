@@ -71,6 +71,8 @@ public final class OriginDataHolder {
     private final RegistryAccess access;
     private final PowerHelper helper;
     private Set<PowerHolder> cachedPowers;
+    // Better Origins: true while this holder uses an empty data object not yet attached to the entity
+    private boolean detached = false;
 
     public OriginDataHolder(Entity entity, EntityOriginAttachment data) {
         this.entity = entity;
@@ -309,7 +311,21 @@ public final class OriginDataHolder {
     private static OriginDataHolder getCached(Entity entity) {
         Map<Entity, OriginDataHolder> cache = CACHED_HOLDERS.get();
         if (cache.size() > 8192) cache.clear(); // safety net for threads whose cache is never cleared by a tick event
-        return cache.computeIfAbsent(entity, x -> new OriginDataHolder(x, x.getData(OriginsAttachments.ENTITY_ORIGIN)));
+        return cache.computeIfAbsent(entity, OriginDataHolder::create);
+    }
+
+    /**
+     * Better Origins: many checks (movement mixins, hover, damage...) look up the origin data of ANY entity.
+     * Before, that created and attached an empty origin attachment to every mob, item and arrow, which was then
+     * saved in the world and sent to every client. Now non-player entities without origin data get a temporary
+     * empty object; it is attached only if something is really written to it (see sync()).
+     */
+    private static OriginDataHolder create(Entity entity) {
+        if (entity instanceof Player || entity.hasData(OriginsAttachments.ENTITY_ORIGIN))
+            return new OriginDataHolder(entity, entity.getData(OriginsAttachments.ENTITY_ORIGIN));
+        OriginDataHolder holder = new OriginDataHolder(entity, new EntityOriginAttachment());
+        holder.detached = true;
+        return holder;
     }
 
     @ApiStatus.Internal
@@ -327,6 +343,10 @@ public final class OriginDataHolder {
 
     //Ticking
     public void sync() {
+        if (this.detached) { // something was written (power granted...): attach the data to the entity now
+            this.entity.setData(OriginsAttachments.ENTITY_ORIGIN, this.data);
+            this.detached = false;
+        }
         this.data.pendingSync = false;
         this.data.lastSyncTick = Proxies.TICK_COUNT.getAsLong();
         this.entity.syncData(OriginsAttachments.ENTITY_ORIGIN);

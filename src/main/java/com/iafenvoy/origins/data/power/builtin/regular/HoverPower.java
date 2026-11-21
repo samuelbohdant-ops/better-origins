@@ -37,6 +37,8 @@ public class HoverPower extends Power {
     @SubscribeEvent
     public static void onTick(EntityTickEvent.Post event) {
         Entity entity = event.getEntity();
+        // Better Origins: entities without origin data can't have this power (skip the lookup for every mob/item every tick)
+        if (!entity.hasData(com.iafenvoy.origins.registry.OriginsAttachments.ENTITY_ORIGIN)) return;
         if (!PowerHelper.get(entity).anyActive(HoverPower.class)) return;
         Vec3 velocity = entity.getDeltaMovement();
         entity.setDeltaMovement(velocity.x, 0, velocity.z);

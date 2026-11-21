@@ -20,7 +20,8 @@ All of these were made for this project and are distributed under the same licen
 - Sounds `adrenaline_activate.ogg`, `adrenaline_crash.ogg`, `elytrian_launch.ogg`, `web_shoot.ogg`, `shulk_force.ogg`,
   `pounce_dash.ogg`, `fireball_spit.ogg`, `bat_echo_on.ogg`, `bat_echo_loop.ogg`, `bat_echo_off.ogg`, `bat_takeoff.ogg` and `bat_dash.ogg`:
   synthesized from scratch.
-- Sound `adrenaline_rush.ogg`: edited (tempo, length, loop) from a heartbeat recording chosen by the author.
+- Sound `adrenaline_rush.ogg`: edited (tempo, length, loop) from a free heartbeat sound effect shared on YouTube for
+  developers (attribution not required).
 
 No Minecraft (Mojang) textures or sound files are included: vanilla sounds are only referenced by their ID
 and played from the player's own game.

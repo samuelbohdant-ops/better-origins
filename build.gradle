@@ -14,7 +14,9 @@ tasks.named('wrapper', Wrapper).configure {
     distributionType = Wrapper.DistributionType.BIN
 }
 
-version = mod_version
+// file name and project version: <Minecraft version>-<mod version>, e.g. 1.21.1-0.8.1
+// (inside the game, neoforge.mods.toml keeps the plain mod version, e.g. 0.8.1)
+version = "${minecraft_version}-${mod_version}"
 group = mod_group_id
 
 repositories {
