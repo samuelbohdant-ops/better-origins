@@ -1,4 +1,4 @@
-![Better Origins logo](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/src/main/resources/logo.png)
+![Better Origins logo](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/src/main/resources/logo.png)
 
 ## Better Origins
 
@@ -27,11 +27,11 @@ The **Human** is still there for an ordinary Minecraft experience, with no abili
 
 ## Low impact
 
-![Road Runner](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/road_runner.png)
+![Road Runner](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/road_runner.png)
 
 *Born to run. Nothing on legs is faster, and anything in your way when you are at full speed regrets it - including walls.*
 
-![Speed Burst](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/rr_dash.png)
+![Speed Burst](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/rr_dash.png)
 
 Toggle for up to 30 seconds: walking +50%, sprinting 3 times faster, and you run up full blocks like slabs. Recharges while off. Uses a lot of hunger while on. **Key: `G`**
 
@@ -45,15 +45,15 @@ Toggle for up to 30 seconds: walking +50%, sprinting 3 times faster, and you run
 
 ---
 
-![Arachnid](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/arachnid.png)
+![Arachnid](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/arachnid.png)
 
 *Their climbing abilities and the ability to trap their foes in spiderweb make the Arachnid perfect hunters.*
 
-![Climbing](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/climbing.png)
+![Climbing](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/climbing.png)
 
 You are able to climb up any kind of wall, not just ladders. **Key: `G` (on/off)**
 
-![Web Throw](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/web_throw.png)
+![Web Throw](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/web_throw.png)
 
 Throw a cobweb. If it hits a creature or a player, it traps them in a real cobweb; if it hits a block, the cobweb drops and stays where it lands. 2 second cooldown. **Key: `H`**
 
@@ -66,15 +66,15 @@ Throw a cobweb. If it hits a creature or a player, it traps them in a real cobwe
 
 ---
 
-![Elytrian](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/elytrian.png)
+![Elytrian](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/elytrian.png)
 
 *Elytrians live in the wind: they glide freely and land lightly, but crashing into a wall hurts them more than others.*
 
-![Gift of the Winds](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/gift_of_the_winds.png)
+![Gift of the Winds](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/gift_of_the_winds.png)
 
 Every 30 seconds, you can launch yourself about 40 blocks into the air. **Key: `G`**
 
-![Wind Charge](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/wind_charge.png)
+![Wind Charge](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/wind_charge.png)
 
 Throw a Breeze's wind charge where you are looking. You store up to 3 and can throw them one after another; each used charge recharges in 10 seconds, one at a time. **Key: `H`**
 
@@ -88,19 +88,19 @@ Throw a Breeze's wind charge where you are looking. You store up to 3 and can th
 
 ---
 
-![Shulk](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/shulk.png)
+![Shulk](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/shulk.png)
 
 *Related to Shulkers, the bodies of the Shulk are outfitted with a protective shell-like skin.*
 
-![Hoarder](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/shulker_inventory.png)
+![Hoarder](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/shulker_inventory.png)
 
 You have access to an additional 27 slots of inventory, like a small chest, which keep the items on death. **Key: `G`**
 
-![Levitation Burst](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/levitation_burst.png)
+![Levitation Burst](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/levitation_burst.png)
 
 Make mobs and players within 5 blocks levitate for 3 seconds, except Shulk and pets; the area lights up purple. 8 second cooldown. **Key: `H`**
 
-![Float](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/shulk_float.png)
+![Float](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/shulk_float.png)
 
 Hover in the air for up to 15 seconds: hold jump to rise, sneak to descend. The time recharges while you are not floating. **Key: `N`**
 
@@ -118,11 +118,11 @@ Hover in the air for up to 15 seconds: hold jump to rise, sneak to descend. The 
 
 ## Medium impact
 
-![Feline](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/feline.png)
+![Feline](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/feline.png)
 
 *With their cat-like appearance, the Feline scare creepers away. With the dexterity of cats, they always land safely on their feet.*
 
-![Pounce](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/pounce.png)
+![Pounce](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/pounce.png)
 
 Leap forcefully where you are looking, leaving a white trail behind you. 3 second cooldown, costs a little hunger. **Key: `G`**
 
@@ -138,11 +138,11 @@ Leap forcefully where you are looking, leaving a white trail behind you. 3 secon
 
 ---
 
-![Enderian](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/enderian.png)
+![Enderian](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/enderian.png)
 
 *Born as children of the Ender Dragon, Enderians are capable of teleporting but are vulnerable to water.*
 
-![Teleportation](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/throw_ender_pearl.png)
+![Teleportation](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/throw_ender_pearl.png)
 
 Whenever you want, you may throw an ender pearl which deals no damage, allowing you to teleport. **Key: `G`**
 
@@ -156,11 +156,11 @@ Whenever you want, you may throw an ender pearl which deals no damage, allowing 
 
 ---
 
-![Cave Worm](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/cave_worm.png)
+![Cave Worm](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/cave_worm.png)
 
 *A born miner who belongs under the stone. Underground it is fast, tough and sharp-eyed; under the open sky it feels slow and exposed.*
 
-![Cave Parasites](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/cw_parasites.png)
+![Cave Parasites](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/cw_parasites.png)
 
 Toggle for up to 15 seconds: mobs, players and pets within 6 blocks (not your pets, not other Cave Worms) catch parasites that grow the longer they stay: damage that ignores armour (even on undead and spiders), slowness and darkness, deadly from level 6. 5 second cooldown after switching it off. **Key: `G`**
 
@@ -180,11 +180,11 @@ Toggle for up to 15 seconds: mobs, players and pets within 6 blocks (not your pe
 
 ## High impact
 
-![The Perfect Human](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/perfect_human.png)
+![The Perfect Human](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/perfect_human.png)
 
 *A human at the peak of their abilities: stronger, faster and tougher in everything. When death comes, Adrenaline puts them back on their feet, but then the body crashes.*
 
-![Adrenaline](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/adrenaline.png)
+![Adrenaline](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/adrenaline.png)
 
 When you are about to die, if you have at least 10 experience levels and Adrenaline is ready, it triggers by itself and uses 10 levels: you go back to about 5 hearts, you are invincible for 5 s, Regeneration II for 30 s; for 15 s Strength III, Speed III, Jump Boost III, full night vision, +200% swim speed and no knockback; for 30 s +50% mining speed. Then comes the crash: for 90 s you lose all bonuses (except the 11th heart). The bar shows Adrenaline in red and the crash in blue; when it is empty, Adrenaline is ready again. If you die, it is ready again right away. **Triggers by itself**
 
@@ -199,11 +199,11 @@ When you are about to die, if you have at least 10 experience levels and Adrenal
 
 ---
 
-![Merling](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/merling.png)
+![Merling](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/merling.png)
 
 *These natural inhabitants of the ocean are not used to being out of the water for too long.*
 
-![Wet Eyes](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/water_vision.png)
+![Wet Eyes](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/water_vision.png)
 
 Your vision underwater is perfect. **Key: `G` (on/off)**
 
@@ -218,11 +218,11 @@ Your vision underwater is perfect. **Key: `G` (on/off)**
 
 ---
 
-![Blazeborn](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/blazeborn.png)
+![Blazeborn](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/blazeborn.png)
 
 *Late descendants of the Blaze, the Blazeborn are naturally immune to the perils of the Nether.*
 
-![Fireball](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/fireball.png)
+![Fireball](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/fireball.png)
 
 Shoot a small fireball where you are looking. 3 second cooldown. **Key: `G`**
 
@@ -238,15 +238,15 @@ Shoot a small fireball where you are looking. 3 second cooldown. **Key: `G`**
 
 ---
 
-![Superior Bat](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/superior_bat.png)
+![Superior Bat](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/superior_bat.png)
 
 *A creature of the night. When the sun goes down it takes to the sky and hears every heartbeat around it, but daylight burns its skin and weakens its blows.*
 
-![Night Wings](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/bat_flight.png)
+![Night Wings](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/bat_flight.png)
 
 At night (and always outside the Overworld) double-jump to fly for up to 30 seconds; sprint while flying to go much faster. The time recharges while you are not flying. Flying costs extra hunger. If your flight ends in the air you glide down for 7 seconds. **Double-jump to fly**
 
-![Echolocation](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/bat_echo.png)
+![Echolocation](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/bat_echo.png)
 
 Toggle at will: for up to 15 seconds you see the outline of every mob within 64 blocks and every player within 32 blocks, even through walls (only you see them), while your body glows with a white aura. The time recharges while it is off. **Key: `G`**
 
@@ -262,15 +262,15 @@ Toggle at will: for up to 15 seconds you see the outline of every mob within 64 
 
 ---
 
-![Phantom](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/phantom.png)
+![Phantom](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/phantom.png)
 
 *As half-human and half-phantom beings, these creatures can switch between a Phantom and a normal form.*
 
-![Spectral Form](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/phantom_phasing_toggle.png)
+![Spectral Form](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/phantom_phasing_toggle.png)
 
 Toggle at will: walk through solid blocks, except obsidian. You become translucent but NOT invisible. Needs more than 6 hunger and drains hunger. **Key: `G`**
 
-![Shadow Veil](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/phantom_veil.png)
+![Shadow Veil](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/phantom_veil.png)
 
 Toggle at will: become invisible for up to 30 seconds. The time recharges while you are visible. Needs more than 6 hunger and drains hunger. **Key: `H`**
 
@@ -283,23 +283,23 @@ Toggle at will: become invisible for up to 30 seconds. The time recharges while 
 
 ---
 
-![Angel](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/origins/angel.png)
+![Angel](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/origins/angel.png)
 
 *A gentle guardian. It can keep its blessings for itself, share them with everyone around it, or both - but heaven's grace takes time to return.*
 
-![Soft Wings](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/angel_soft_fall.png)
+![Soft Wings](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/angel_soft_fall.png)
 
 Toggle at will: you fall 20% slower and take no fall damage. **Key: `N`**
 
-![Blessing: Self](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/angel_selfish.png)
+![Blessing: Self](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/angel_selfish.png)
 
 Toggle: you get +15% speed, +20% attack speed, +15% damage, Resistance I and Regeneration I. Uses the blessing time (30 seconds). The area around you lights up. **Key: `G`**
 
-![Blessing: Others](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/angel_altruist.png)
+![Blessing: Others](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/angel_altruist.png)
 
 Toggle: the 3 blessings chosen in the blessing menu go to every player and pet within 10 blocks, you included, and the area lights up. With both blessings on the time runs out twice as fast. After switching everything off you must wait 30 seconds. **Key: `H`**
 
-![Blessing Menu](https://raw.githubusercontent.com/samuelbohdant-ops/better-origins/main/docs/curseforge/abilities/angel_blessing_menu.png)
+![Blessing Menu](https://cdn.jsdelivr.net/gh/samuelbohdant-ops/better-origins@main/docs/curseforge/abilities/angel_blessing_menu.png)
 
 Press your 4th ability key to choose which 3 blessings you give to others. **Key: `,`**
 
