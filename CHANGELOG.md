@@ -3,6 +3,7 @@
 All versions are for Minecraft 1.21.1 (NeoForge). File names: `better_origins-1.21.1-<version>.jar`.
 
 ## 0.9.1
+- Ability checks skip mobs, items and arrows without origin data straight away (less work every tick).
 - Road Runner: wall crashes are detected reliably (real speed, the whole side of the body, walls at feet+head or
   head+above) and hurt more; the stun no longer zooms the stunned player's view and stunned
   mobs stay perfectly still (their AI is paused and given back when the stun ends).

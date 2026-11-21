@@ -1,7 +1,5 @@
 package com.betterorigins;
 
-import com.iafenvoy.origins.attachment.OriginDataHolder;
-import com.iafenvoy.origins.data.power.reference.PowerHolder;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.player.AbstractClientPlayer;
@@ -11,7 +9,6 @@ import net.minecraft.client.resources.sounds.EntityBoundSoundInstance;
 import net.minecraft.client.resources.sounds.SoundInstance;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.util.RandomSource;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
@@ -40,7 +37,6 @@ import java.util.UUID;
  */
 @EventBusSubscriber(modid = BetterOriginsIds.MOD_ID, value = Dist.CLIENT)
 public final class BatEchoClient {
-    private static final ResourceLocation ECHO_POWER = ResourceLocation.fromNamespaceAndPath(BetterOriginsIds.CONTENT_NS, "bat_echo");
     private static final double MOB_RANGE = 64, PLAYER_RANGE = 32;
     private static final Map<UUID, Boolean> LAST_STATE = new HashMap<>();
     private static final Set<Integer> ECHOING_PLAYERS = new HashSet<>();   // entity ids of Bats with Echolocation on (this tick)
@@ -48,14 +44,6 @@ public final class BatEchoClient {
     private static HumSound hum;
 
     private BatEchoClient() {
-    }
-
-    private static boolean echoActive(Player player) {
-        return OriginDataHolder.optional(player).map(holder -> {
-            for (PowerHolder power : holder.getAllPowers())
-                if (ECHO_POWER.equals(power.id())) return power.power().isActive(holder);
-            return false;
-        }).orElse(false);
     }
 
     @SubscribeEvent
@@ -72,7 +60,7 @@ public final class BatEchoClient {
         }
         Map<UUID, Boolean> seen = new HashMap<>();
         for (AbstractClientPlayer player : level.players()) {
-            boolean active = echoActive(player);
+            boolean active = BOPowers.active(player, BOPowers.BAT_ECHO);
             Boolean before = LAST_STATE.get(player.getUUID());
             seen.put(player.getUUID(), active);
             if (active) {

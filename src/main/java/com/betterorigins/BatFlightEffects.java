@@ -1,10 +1,7 @@
 package com.betterorigins;
 
-import com.iafenvoy.origins.attachment.OriginDataHolder;
-import com.iafenvoy.origins.data.power.reference.PowerHolder;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
@@ -27,7 +24,6 @@ import java.util.UUID;
  */
 @EventBusSubscriber(modid = BetterOriginsIds.MOD_ID)
 public final class BatFlightEffects {
-    private static final ResourceLocation FLIGHT_POWER = ResourceLocation.fromNamespaceAndPath(BetterOriginsIds.CONTENT_NS, "bat_flight");
     private static final int TRAIL_TICKS = 7;
     private static final float VOLUME = 0.45F;
     private static final DustParticleOptions WHITE_DUST = new DustParticleOptions(new Vector3f(1.0F, 1.0F, 1.0F), 1.2F);
@@ -41,19 +37,11 @@ public final class BatFlightEffects {
     private BatFlightEffects() {
     }
 
-    private static boolean isBat(Player player) {
-        return OriginDataHolder.optional(player).map(holder -> {
-            for (PowerHolder power : holder.getAllPowers())
-                if (FLIGHT_POWER.equals(power.id())) return true;
-            return false;
-        }).orElse(false);
-    }
-
     @SubscribeEvent
     public static void onPlayerTick(PlayerTickEvent.Post event) {
         Player player = event.getEntity();
         if (!(player.level() instanceof ServerLevel level)) return;
-        if (player.isCreative() || player.isSpectator() || !isBat(player)) {
+        if (player.isCreative() || player.isSpectator() || !BOPowers.has(player, BOPowers.BAT_FLIGHT)) {
             STATES.remove(player.getUUID());
             return;
         }
